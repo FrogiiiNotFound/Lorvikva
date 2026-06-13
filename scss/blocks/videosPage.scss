@@ -1,7 +1,7 @@
 .videos {
   padding: 100px 0px 0px;
 
-  &__container {
+  &__container-page {
   }
 
   &__title {
@@ -12,56 +12,104 @@
   }
 
   &__btns {
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     gap: 80px;
+    margin-bottom: 80px;
+    justify-content: center;
   }
 
   &__btn {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #8e77ff;
     border-radius: 40px;
     padding: 46px 73px;
-    background: radial-gradient(
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: radial-gradient(
       278.82% 137.51% at 1.95% 3.59%,
       rgba(255, 255, 255, 0.4) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-  }
-
-  &__btn-text {
-    font-weight: 700;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-weight: 400;
     font-size: 40px;
     text-align: center;
+    color: rgba(101, 70, 166, 0.7);
+    min-width: 620px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  &__btn._active {
+    background-color: #ead7ff;
+    background-image: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      #ead7ff 17.79%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+    font-weight: 700;
     color: #6546a6;
   }
 
   &__content {
+    position: relative;
+    z-index: 1;
   }
 
-  &__videos {
+  &__videos-page {
+    display: flex;
+    align-items: center;
+    gap: 40px 80px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
   }
 
   &__video {
+    position: relative;
   }
 
   &__img {
   }
 
   &__video-content {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__video-texts {
   }
 
   &__video-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 11px;
   }
 
   &__video-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
   }
 
   &__play {
+    cursor: pointer;
   }
 
   &__materials {
+    display: none;
   }
 
   &__materials-first-row {

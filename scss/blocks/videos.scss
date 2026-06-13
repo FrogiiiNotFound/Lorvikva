@@ -1,4 +1,4 @@
-.videos {
+.home-videos {
   position: relative;
   padding: 20px 0px 50px 0px;
 
@@ -52,24 +52,32 @@
 
   &__video-img {
     border-radius: 20px;
+    display: block;
+  }
+
+  &__video-img2-phone {
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
   }
 
   &__video-img2 {
     position: relative;
-  }
-  &__video-img2::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25); /* меняй прозрачность под себя */
-    border-radius: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+    }
   }
 
   &__video-content {
     padding: 0px 20px;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -90,6 +98,7 @@
     font-size: 16px;
     color: #fff;
     margin-bottom: 11px;
+    margin-top: -40px;
   }
 
   &__video-title {
@@ -133,20 +142,12 @@
     right: -40px;
     z-index: -10;
   }
-
-  &__video-img {
-    display: block;
-  }
-
-  &__video-img2-phone {
-    display: none;
-  }
 }
 
 /* ============================================================================== */
 
 @media (max-width: 1250px) {
-  .videos {
+  .home-videos {
     &__videos {
       margin-top: 0px;
       flex-direction: column-reverse;
@@ -168,7 +169,7 @@
 }
 
 @media (max-width: 768px) {
-  .videos {
+  .home-videos {
     &__title {
       font-size: 42px;
     }
@@ -179,10 +180,12 @@
 
     &__video {
       max-width: 100%;
+      width: 100%;
     }
 
     &__video-img img {
       max-width: 100%;
+      width: 100%;
     }
 
     &__video-title {
@@ -190,11 +193,7 @@
     }
 
     &__video-content {
-      bottom: 87px;
-    }
-
-    &__video-button {
-      margin-bottom: -150px;
+      bottom: 20px;
     }
 
     &__video-button img {
@@ -204,7 +203,7 @@
 }
 
 @media (max-width: 528px) {
-  .videos {
+  .home-videos {
     &__title {
       font-size: 30px;
       text-align: left;
@@ -215,25 +214,27 @@
       text-align: left;
     }
 
-    &__video-content {
-      flex-direction: column;
-      bottom: 162px;
-    }
-
-    &__video-button {
-      margin-right: -230px;
+    &__videos {
+      padding: 0px 15px;
     }
 
     &__video-img {
       display: none;
     }
 
-    &__video-img2 {
+    &__video-img2-phone {
       display: block;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
     }
 
-    &__video-img2 img {
-      max-width: 100%;
+    &__video-content {
+      flex-direction: row;
+      bottom: 20px;
     }
 
     &__button {

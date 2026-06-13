@@ -17,6 +17,13 @@
 
 .header-pages {
   position: relative;
+  pointer-events: none;
+}
+
+.header-pages .nav-header__link,
+.header-pages .menu__icon,
+.header-pages .icon-menu2 {
+  pointer-events: auto;
 }
 
 .header__decor {
@@ -25,6 +32,7 @@
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: -10;
+  pointer-events: none;
 }
 
 .header__decor-phone {
@@ -46,5 +54,6 @@
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: -10;
+  pointer-events: none;
 }
 }

@@ -40,7 +40,7 @@
                   <a class="nav-header__link menu__link" href="">Управление терапией</a>
                 </li>
                 <li class="nav-header__item">
-                  <a class="nav-header__link menu__link _active" href="DosageRegimen.html"
+                  <a class="nav-header__link menu__link" href="DosageRegimen.html"
                     >Режим дозирования</a
                   >
                 </li>
@@ -48,7 +48,9 @@
                   <a class="nav-header__link menu__link" href="DoseReduction.html">Редукция дозы</a>
                 </li>
                 <li class="nav-header__item">
-                  <a class="nav-header__link menu__link" href="">Видео и полезные материалы</a>
+                  <a class="nav-header__link menu__link _active" href="Videos.html"
+                    >Видео и полезные материалы</a
+                  >
                 </li>
                 <li class="nav-header__item">
                   <div class="menu__icon icon-menu2">
@@ -63,18 +65,14 @@
 
       <main class="main">
         <section class="videos">
-          <div class="videos__container _container">
+          <div class="videos__container-page _container">
             <h2 class="videos__title">Видео и полезные материалы</h2>
             <div class="videos__btns">
-              <div class="videos__btn">
-                <p class="videos__btn-text">Видео</p>
-              </div>
-              <div class="videos__btn">
-                <p class="videos__btn-text">Полезные материалы</p>
-              </div>
+              <button type="button" class="videos__btn videos__btn1 _active">Видео</button>
+              <button type="button" class="videos__btn videos__btn2">Полезные материалы</button>
             </div>
             <div class="videos__content">
-              <div class="videos__videos">
+              <div class="videos__videos-page">
                 <div class="videos__video">
                   <div class="videos__img">
                     <img src="images/videoPage/video-img.png" alt="video-img" />
@@ -244,5 +242,6 @@
 
     <script src="index.js"></script>
     <script src="./js/headerMenu.js"></script>
+    <script src="./js/videoPageButtons.js"></script>
   </body>
 </html>
