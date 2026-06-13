@@ -1,0 +1,114 @@
+.videos {
+  padding: 100px 0px 0px;
+
+  &__container {
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 64px;
+    color: #ffa500;
+    margin-bottom: 80px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__btn {
+    border-radius: 40px;
+    padding: 46px 73px;
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  &__btn-text {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #6546a6;
+  }
+
+  &__content {
+  }
+
+  &__videos {
+  }
+
+  &__video {
+  }
+
+  &__img {
+  }
+
+  &__video-content {
+  }
+
+  &__video-texts {
+  }
+
+  &__video-subtitle {
+  }
+
+  &__video-title {
+  }
+
+  &__play {
+  }
+
+  &__materials {
+  }
+
+  &__materials-first-row {
+  }
+
+  &__materials-article {
+  }
+
+  &__article-name {
+  }
+
+  &__article-title {
+  }
+
+  &__article-text {
+  }
+
+  &__article-decor {
+  }
+
+  &__article-author {
+  }
+
+  &__article-author-img {
+  }
+
+  &__article-author-name {
+  }
+
+  &__videos-materials-article {
+  }
+
+  &__videos-materials-article-img {
+  }
+
+  &__article-photo-title {
+  }
+
+  &__article-second-row {
+  }
+
+  &__article-article-long {
+  }
+
+  &__article-content {
+  }
+
+  &__article-img {
+  }
+}
