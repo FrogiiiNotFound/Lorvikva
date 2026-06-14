@@ -1,0 +1,188 @@
+.effective-page__title {
+  font-weight: 900;
+  font-size: 64px;
+  color: #ffa500;
+  margin-bottom: 60px;
+}
+.effective-page__btns {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+  margin-bottom: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.effective-page__btn {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid #8e77ff;
+  border-radius: 40px;
+  padding: 46px 73px;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: radial-gradient(278.82% 137.51% at 1.95% 3.59%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: rgba(101, 70, 166, 0.7);
+  min-width: 620px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+.effective-page__btn._active {
+  background-color: #ead7ff;
+  background-image: radial-gradient(278.82% 137.51% at 1.95% 3.59%, #ead7ff 17.79%, rgba(255, 255, 255, 0.01) 100%);
+  font-weight: 700;
+  color: #6546a6;
+}
+.effective-page__general-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #2c1645;
+  margin-bottom: 40px;
+}
+.effective-page__general-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.effective-page__general-procents {
+  font-weight: 500;
+  font-size: 160px;
+  line-height: 100%;
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+.effective-page__general-procent-text {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}
+.effective-page__general-time {
+  padding: 40px 44px;
+  border: 1px solid #8e77ff;
+  border-radius: 40px;
+  background: radial-gradient(278.82% 137.51% at 1.95% 3.59%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  margin-bottom: 80px;
+}
+.effective-page__general-time-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #020202;
+  margin-bottom: 40px;
+}
+.effective-page__general-time-img {
+  margin-bottom: 30px;
+}
+.effective-page__general-addition {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: right;
+  color: #000;
+  margin-bottom: 20px;
+}
+.effective-page__general-schedule-wrapper {
+  border-radius: 40px;
+  margin-bottom: 80px;
+  background: radial-gradient(278.82% 137.51% at 1.95% 3.59%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #8e77ff;
+  padding: 40px;
+}
+.effective-page__general-schedule {
+  margin-bottom: 80px;
+}
+.effective-page__general-schedule-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 20px;
+  background: #6546a6;
+  border-radius: 40px;
+  margin-bottom: 24px;
+}
+.effective-page__general-schedule-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.effective-page__general-schedule-procent {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 333%;
+  color: #ffa500;
+}
+.effective-page__general-schedule-procent span {
+  font-size: 160px;
+}
+.effective-page__general-schedule-procent-text {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}
+.effective-page__general-schedule-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #020202;
+  margin-bottom: 40px;
+}
+.effective-page__general-schedule-title span {
+  color: #6546a6;
+}
+.effective-page__general-schedule-img {
+  margin-bottom: 80px;
+}
+.effective-page__general-schedule-addition {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #9c9b9d;
+}
+.effective-page__general-addition-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #332c3a;
+  margin-bottom: 20px;
+}
+.effective-page__general-addition-text span {
+  font-weight: 700;
+}
+.effective-page__general-schedule-list-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #332c3a;
+  margin-bottom: 10px;
+}
+.effective-page__general-schedule-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #332c3a;
+}

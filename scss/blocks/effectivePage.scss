@@ -1,0 +1,1032 @@
+.effective-page {
+  &__container {
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 64px;
+    color: #ffa500;
+    margin-bottom: 60px;
+    margin-top: 100px;
+  }
+
+  &__btns {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
+    justify-content: center;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #8e77ff;
+    border-radius: 40px;
+    padding: 46px 73px;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(101, 70, 166, 0.7);
+    min-width: 620px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  &__btn._active {
+    background-color: #ead7ff;
+    background-image: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      #ead7ff 17.79%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+    font-weight: 700;
+    color: #6546a6;
+  }
+
+  &__content {
+  }
+
+  &__cns {
+  }
+
+  &__cns-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2c1645;
+    margin-bottom: 40px;
+  }
+
+  &__cns-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  &__cns-item-icon {
+  }
+
+  &__cns-item-texts {
+  }
+
+  &__cns-procents {
+    font-weight: 500;
+    font-size: 160px;
+    line-height: 100%;
+    color: #ffa500;
+    margin-bottom: 20px;
+  }
+
+  &__cns-procent-text {
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+  }
+
+  &__cns-time {
+    padding: 40px 44px;
+    border: 1px solid #8e77ff;
+    border-radius: 40px;
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    margin-bottom: 80px;
+  }
+
+  &__cns-time-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 40px;
+  }
+
+  &__cns-time-img {
+    margin-bottom: 30px;
+  }
+
+  &__cns-addition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__cns-time-plus {
+    text-align: center;
+  }
+
+  &__cns-schedule-wrapper {
+    border-radius: 40px;
+    margin-bottom: 80px;
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border: 1px solid #8e77ff;
+    padding: 40px;
+  }
+
+  &__cns-schedule {
+    margin-bottom: 80px;
+  }
+
+  &__cns-schedule-name {
+    width: fit-content;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 16px 20px;
+    background: #6546a6;
+    border-radius: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__cns-schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__cns-schedule-procent {
+    line-height: 1 !important;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 333%;
+    color: #ffa500;
+
+    & span {
+      font-size: 160px;
+    }
+  }
+
+  &__cns-schedule-procent-text {
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+  }
+
+  &__cns-schedule-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 40px;
+
+    & span {
+      color: #6546a6;
+    }
+  }
+
+  &__cns-schedule-img {
+    margin-bottom: 80px;
+  }
+
+  &__cns-schedule-addition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #9c9b9d;
+  }
+
+  &__cns-addition-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 20px;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__cns-schedule-list {
+  }
+
+  &__cns-schedule-list-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 10px;
+  }
+
+  &__cns-schedule-list-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 40px;
+  }
+}
+
+.effective-page {
+  &__general {
+  }
+
+  &__general-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2c1645;
+    margin-bottom: 40px;
+
+    & span {
+      color: #e97300;
+    }
+  }
+
+  &__general-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  &__general-item-img {
+  }
+
+  &__general-texts {
+  }
+
+  &__general-procent {
+    font-weight: 500;
+    font-size: 160px;
+    line-height: 100%;
+    color: #ffa500;
+    margin-bottom: 20px;
+  }
+
+  &__general-text {
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+
+    & span {
+      font-weight: 700;
+      color: #6546a6;
+    }
+  }
+
+  &__general-schedule {
+    border-radius: 40px;
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border: 1px solid #8e77ff;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__general-schedule-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 7px;
+  }
+
+  &__general-shedule {
+    margin-bottom: 30px;
+  }
+
+  &__general-shedule-addition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__general-shedule-addition2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #9c9b9d;
+  }
+
+  &__general-learn-more {
+    position: relative;
+  }
+
+  &__general-learn-more-img {
+  }
+
+  &__general-learn-more-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 80px 40px;
+  }
+
+  @media (min-width: 1251px) {
+    &__general-learn-more-content {
+      margin-top: -260px;
+    }
+  }
+
+  &__general-learn-more-texts {
+  }
+
+  &__general-learn-more-text {
+    font-weight: 400;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__general-learn-more-title {
+    font-weight: 900;
+    font-size: 64px;
+    color: #ffa500;
+  }
+
+  &__general-learn-more-btn {
+    cursor: pointer;
+  }
+
+  &__general-shedule-procent-wrapper {
+    border-radius: 40px;
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border: 1px solid #8e77ff;
+    margin-bottom: 80px;
+    padding: 40px;
+  }
+
+  &__general-shedule-procent {
+  }
+
+  &__general-shedule-procent-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__general-shedule-procent-procent {
+    font-weight: 500;
+    font-size: 160px;
+    line-height: 100%;
+    color: #ffa500;
+    line-height: 1;
+  }
+
+  &__general-shedule-procent-text {
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+
+    & span {
+      font-weight: 700;
+      color: #6546a6;
+    }
+  }
+
+  &__general-shedule-procent-img {
+    margin-bottom: 60px;
+  }
+
+  &__general-shedule-procent-addition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #9c9b9d;
+    margin-bottom: 20px;
+  }
+
+  &__general-shedule-procent-minus {
+    text-align: center;
+  }
+
+  &__general-simple {
+  }
+
+  &__general-simple-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2c1645;
+    margin-bottom: 40px;
+
+    & span {
+      color: #e97300;
+    }
+  }
+
+  &__general-simple-shedule {
+    padding: 40px;
+    margin-bottom: 80px;
+
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-radius: 40px;
+    border: 1px solid #8e77ff;
+  }
+
+  &__general-simple-shedule-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 40px;
+  }
+
+  &__general-simple-img {
+    margin-bottom: 30px;
+  }
+
+  &__general-simple-shedule-addition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+  }
+
+  &__general-simple-shedule-plus {
+    text-align: center;
+  }
+
+  &__general-example {
+  }
+
+  &__general-example-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2c1645;
+    margin-bottom: 40px;
+
+    & span {
+      color: #e97300;
+    }
+  }
+
+  &__general-example-shedule {
+    border-radius: 40px;
+    padding: 40px;
+    margin-bottom: 80px;
+    background: radial-gradient(
+      278.82% 137.51% at 1.95% 3.59%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border: 1px solid #8e77ff;
+  }
+
+  &__general-example-shedule-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 40px;
+  }
+
+  &__general-example-shedule-img {
+  }
+
+  &__general-addition {
+    font-weight: 400;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 20px;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__general-list {
+    margin-bottom: 40px;
+  }
+
+  &__general-list-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 10px;
+  }
+
+  &__general-list-items {
+    font-weight: 400;
+    font-size: 14px;
+    color: #332c3a;
+  }
+
+  &__general-learn-more-img-phone {
+    display: none;
+  }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+  .effective-page {
+    &__title {
+      font-size: 58px;
+    }
+
+    &__btns {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__btn {
+      font-size: 35px;
+    }
+
+    &__general-item {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__general-title {
+      font-size: 36px;
+    }
+
+    &__general-item-img img {
+      max-width: 250px;
+    }
+
+    &__general-procent {
+      font-size: 140px;
+    }
+
+    &__general-text {
+      font-size: 32px;
+    }
+
+    &__general-schedule-title {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    &__general-shedule img {
+      max-width: 100%;
+    }
+
+    &__general-shedule-addition2 {
+      font-size: 14px;
+    }
+
+    &__general-learn-more-img {
+      display: none;
+    }
+
+    &__general-learn-more-img-phone {
+      display: block;
+      border-radius: 40px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    &__general-learn-more-img-phone img {
+      max-width: 100%;
+      width: 100%;
+      display: block;
+    }
+
+    &__general-shedule-procent-item {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    &__general-shedule-procent-img img {
+      max-width: 100%;
+    }
+
+    &__general-shedule-procent-procent {
+      font-size: 140px;
+    }
+
+    &__general-shedule-procent-text {
+      font-size: 32px;
+    }
+
+    &__general-shedule-procent-addition {
+      font-size: 14px;
+    }
+
+    &__general-simple-title {
+      font-size: 32px;
+    }
+
+    &__general-simple-shedule-title {
+      font-size: 32px;
+    }
+
+    &__general-simple-img img {
+      max-width: 100%;
+    }
+
+    &__general-simple-shedule-addition {
+      margin-bottom: 20px;
+    }
+
+    &__general-example-title {
+      font-size: 32px;
+    }
+
+    &__general-example-shedule-title {
+      font-size: 32px;
+    }
+
+    &__general-example-shedule-img img {
+      max-width: 100%;
+    }
+
+    &__general-example-shedule {
+      margin-bottom: 60px;
+    }
+
+    &__cns-title {
+      font-size: 36px;
+    }
+
+    &__cns-item {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__cns-item-icon img {
+      max-width: 250px;
+    }
+
+    &__cns-procents {
+      font-size: 140px;
+    }
+
+    &__cns-procent-text {
+      font-size: 32px;
+    }
+
+    &__cns-time-title {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    &__cns-time-img img {
+      max-width: 100%;
+    }
+
+    &__cns-time {
+      padding: 40px 40px 20px 40px;
+    }
+
+    &__cns-schedule-item {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    &__cns-schedule-procent span {
+      font-size: 140px;
+    }
+
+    &__cns-schedule-procent-text {
+      font-size: 32px;
+    }
+
+    &__cns-schedule-title {
+      font-size: 32px;
+    }
+
+    &__cns-schedule-img img {
+      max-width: 100%;
+    }
+
+    &__cns-schedule-procent-text {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .effective-page {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__btn {
+      min-width: auto;
+      width: 100%;
+      padding: 32px 24px;
+      font-size: 28px;
+    }
+
+    &__general-title {
+      font-size: 32px;
+    }
+
+    &__general-procent {
+      font-size: 100px;
+    }
+
+    &__general-text {
+      font-size: 24px;
+    }
+
+    &__general-learn-more-content {
+      margin-top: -170px;
+      padding: 0 24px 40px 24px;
+    }
+
+    &__general-learn-more-text {
+      font-size: 32px;
+    }
+
+    &__general-learn-more-title {
+      font-size: 48px;
+    }
+
+    &__general-shedule-procent-procent {
+      font-size: 100px;
+    }
+
+    &__general-shedule-procent-text {
+      font-size: 24px;
+    }
+
+    &__general-shedule-procent-text {
+      font-size: 20px;
+    }
+
+    &__general-learn-more-content {
+      margin-top: -188px;
+    }
+
+    &__general-shedule-procent-img {
+      margin-bottom: 30px;
+    }
+
+    &__general-simple-title {
+      font-size: 26px;
+    }
+
+    &__general-simple-shedule-title {
+      font-size: 26px;
+    }
+
+    &__general-example-title {
+      font-size: 26px;
+    }
+
+    &__general-example-shedule-title {
+      font-size: 26px;
+    }
+
+    &__cns-title {
+      font-size: 32px;
+    }
+
+    &__cns-procents {
+      font-size: 100px;
+    }
+
+    &__cns-procent-text {
+      font-size: 24px;
+    }
+
+    &__cns-item-icon img {
+      max-width: 220px;
+    }
+
+    &__general-item-img img {
+      max-width: 220px;
+    }
+
+    &__cns-time-title {
+      font-size: 28px;
+    }
+
+    &__cns-schedule-name {
+      font-size: 16px;
+    }
+
+    &__cns-schedule-procent span {
+      font-size: 100px;
+    }
+
+    &__cns-schedule-procent-text {
+      font-size: 22px;
+    }
+
+    &__cns-schedule-title {
+      font-size: 23px;
+    }
+
+    &__cns-schedule {
+      margin-bottom: 40px;
+    }
+
+    &__cns-schedule-wrapper {
+      padding: 20px;
+    }
+
+    &__cns-time {
+      margin-bottom: 40px;
+    }
+
+    &__cns-item {
+      margin-bottom: 50px;
+    }
+
+    &__btns {
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    &__general-item {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 528px) {
+  .effective-page {
+    &__title {
+      font-size: 36px;
+      margin-bottom: 40px;
+      margin-top: 80px;
+    }
+
+    &__btn {
+      font-size: 24px;
+      padding: 24px 16px;
+    }
+
+    &__general-title {
+      font-size: 26px;
+    }
+
+    &__general-procent {
+      font-size: 100px;
+    }
+
+    &__general-text {
+      font-size: 20px;
+    }
+
+    &__general-learn-more-text {
+      font-size: 24px;
+    }
+
+    &__general-learn-more-title {
+      font-size: 36px;
+    }
+
+    &__general-shedule-procent-procent {
+      font-size: 100px;
+    }
+
+    &__general-shedule-procent-text {
+      font-size: 20px;
+    }
+
+    &__general-learn-more-btn img {
+      width: 90px;
+    }
+
+    &__general-simple-shedule {
+      margin-bottom: 60px;
+    }
+
+    &__general-shedule-procent-wrapper {
+      margin-bottom: 60px;
+    }
+
+    &__general-learn-more-content {
+      margin-top: -151px;
+    }
+
+    &__general-shedule-addition2 {
+      font-size: 10px;
+    }
+
+    &__general-shedule-addition {
+      font-size: 10px;
+    }
+
+    &__general-schedule-title {
+      font-size: 20px;
+    }
+
+    &__general-item-img img {
+      max-width: 160px;
+    }
+
+    &__general-item {
+      margin-bottom: 40px;
+    }
+
+    &__general-shedule-procent-wrapper {
+      padding: 20px;
+    }
+
+    &__general-shedule-procent-addition {
+      font-size: 10px;
+    }
+
+    &__general-shedule-procent-minus img {
+      width: 60px;
+    }
+
+    &__general-simple-shedule-title {
+      font-size: 20px;
+    }
+
+    &__general-simple-shedule-addition {
+      font-size: 10px;
+    }
+
+    &__general-simple-shedule-plus img {
+      width: 55px;
+    }
+
+    &__general-simple-shedule {
+      padding: 20px;
+    }
+
+    &__general-example-shedule-title {
+      font-size: 20px;
+    }
+
+    &__cns-title {
+      font-size: 26px;
+    }
+
+    &__cns-item-icon img {
+      max-width: 160px;
+    }
+
+    &__cns-procent-text {
+      font-size: 20px;
+    }
+
+    &__cns-time-title {
+      font-size: 20px;
+    }
+
+    &__general-schedule {
+      padding: 20px;
+    }
+
+    &__cns-addition {
+      font-size: 10px;
+    }
+
+    &__cns-schedule-name {
+      font-size: 13px;
+    }
+
+    &__cns-schedule-procent span {
+      font-size: 80px;
+    }
+
+    &__cns-schedule-procent-text {
+      font-size: 18px;
+    }
+
+    &__cns-schedule-title {
+      font-size: 18px;
+    }
+
+    &__cns-schedule-img {
+      margin-bottom: 30px;
+    }
+
+    &__cns-schedule-addition {
+      font-size: 13px;
+    }
+  }
+}
