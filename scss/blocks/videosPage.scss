@@ -2,6 +2,7 @@
   padding: 100px 0px 0px;
 
   &__container-page {
+    position: relative;
   }
 
   &__title {
@@ -48,12 +49,9 @@
   }
 
   &__btn._active {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     background-color: #ead7ff;
-    background-image: radial-gradient(
-      278.82% 137.51% at 1.95% 3.59%,
-      #ead7ff 17.79%,
-      rgba(255, 255, 255, 0.01) 100%
-    );
     font-weight: 700;
     color: #6546a6;
   }
@@ -80,6 +78,7 @@
 
   &__video-content {
     position: absolute;
+    padding: 0px 20px;
     bottom: 30px;
     left: 0px;
 
@@ -113,50 +112,224 @@
   }
 
   &__materials-first-row {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
   &__materials-article {
+    cursor: pointer;
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 40px;
+    background: #fff;
+    min-width: 420px;
+    min-height: 400px;
   }
 
   &__article-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 40px;
+    background: #e97300;
+    margin-bottom: 40px;
+    padding: 6px 44px;
+    width: fit-content;
   }
 
   &__article-title {
+    min-width: 379px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #6546a6;
+    margin-bottom: 20px;
   }
 
   &__article-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 40px;
   }
 
   &__article-decor {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
   }
 
   &__article-author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
-  &__article-author-img {
+  &__article-author-img img {
+    border-radius: 100%;
   }
 
   &__article-author-name {
+    font-weight: 400;
+    font-size: 16px;
+    color: #a1a0b3;
   }
 
   &__videos-materials-article {
+    cursor: pointer;
+    position: relative;
   }
 
   &__videos-materials-article-img {
   }
 
   &__article-photo-title {
+    max-width: 380px;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
   }
 
   &__article-second-row {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    margin-bottom: 80px;
   }
 
   &__article-article-long {
+    cursor: pointer;
+    padding: 0px 0px 0px 40px;
+    background: #fff;
+    border-radius: 40px;
+    max-width: 870px;
+    display: flex;
+    align-items: center;
   }
 
   &__article-content {
   }
 
   &__article-img {
+  }
+
+  &__article-decor {
+    right: inherit;
+    left: 35px;
+  }
+
+  &__decor1 {
+    position: absolute;
+    top: 80px;
+    left: -220px;
+    z-index: -10;
+  }
+  &__decor2 {
+    position: absolute;
+    top: -120px;
+    right: -270px;
+    z-index: -10;
+  }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+  .videos {
+    &__title {
+      font-size: 58px;
+    }
+
+    &__btns {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &__btn {
+      font-size: 36px;
+    }
+
+    &__videos-page {
+      justify-content: center;
+    }
+
+    &__materials-first-row {
+      flex-direction: column;
+    }
+
+    &__videos-materials-article-img img {
+      max-width: 100%;
+    }
+
+    &__article-second-row {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .videos {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__btn {
+      font-size: 33px;
+      padding: 36px 73px;
+      min-width: 100%;
+    }
+
+    &__btns {
+      margin-bottom: 50px;
+    }
+
+    &__img img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 528px) {
+  .videos {
+    &__title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__btns {
+      gap: 30px;
+    }
+
+    &__btn {
+      padding: 27px 63px;
+      font-size: 24px;
+    }
+
+    &__video-title {
+      font-size: 19px;
+    }
+
+    &__video-subtitle {
+      font-size: 14px;
+    }
+
+    &__article-article-long {
+      flex-direction: column;
+    }
+
+    &__article-article-long {
+      padding: 20px 40px;
+    }
+
+    &__article-img img {
+      max-width: 100%;
+    }
   }
 }
