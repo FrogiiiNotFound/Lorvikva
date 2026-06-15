@@ -368,6 +368,10 @@
     &__addition-plus img {
       width: 65px;
     }
+
+    &__container {
+      padding: 0px;
+    }
   }
 }
 
@@ -444,6 +448,23 @@
 
     &-text-title {
       font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 528px) {
+  .slider {
+    &__slide-title {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .slider {
+    &__addition-text {
+      top: 54%;
+      font-size: 23px;
     }
   }
 }

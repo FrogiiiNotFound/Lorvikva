@@ -73,9 +73,6 @@
     position: relative;
   }
 
-  &__img {
-  }
-
   &__video-content {
     position: absolute;
     padding: 0px 20px;
@@ -85,9 +82,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  &__video-texts {
   }
 
   &__video-subtitle {
@@ -183,9 +177,6 @@
     position: relative;
   }
 
-  &__videos-materials-article-img {
-  }
-
   &__article-photo-title {
     max-width: 380px;
     position: absolute;
@@ -214,13 +205,11 @@
     align-items: center;
   }
 
-  &__article-content {
-  }
-
-  &__article-img {
-  }
-
   &__article-decor {
+    right: 20px;
+  }
+
+  &__article-decor2 {
     right: inherit;
     left: 35px;
   }

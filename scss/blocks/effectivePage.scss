@@ -257,10 +257,18 @@
   }
 
   &__general-item {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
     margin-bottom: 80px;
+  }
+
+  &__general-item-decor {
+    position: absolute;
+    bottom: -80px;
+    left: 100px;
+    z-index: -10;
   }
 
   &__general-item-img {
@@ -370,6 +378,7 @@
   }
 
   &__general-shedule-procent-wrapper {
+    position: relative;
     border-radius: 40px;
     background: radial-gradient(
       278.82% 137.51% at 1.95% 3.59%,
@@ -379,6 +388,13 @@
     border: 1px solid #8e77ff;
     margin-bottom: 80px;
     padding: 40px;
+  }
+
+  &__general-shedule-procent-wrapper-decor {
+    position: absolute;
+    top: -280px;
+    left: -350px;
+    z-index: -10;
   }
 
   &__general-shedule-procent {
@@ -441,6 +457,7 @@
   }
 
   &__general-simple-shedule {
+    position: relative;
     padding: 40px;
     margin-bottom: 80px;
 
@@ -451,6 +468,13 @@
     );
     border-radius: 40px;
     border: 1px solid #8e77ff;
+  }
+
+  &__general-simple-shedule-decor {
+    position: absolute;
+    top: 0;
+    right: -450px;
+    z-index: -10;
   }
 
   &__general-simple-shedule-title {
@@ -476,6 +500,7 @@
   }
 
   &__general-simple-shedule-plus {
+    cursor: pointer;
     text-align: center;
   }
 
@@ -887,6 +912,7 @@
 
     &__general-title {
       font-size: 26px;
+      margin-bottom: 0;
     }
 
     &__general-procent {
@@ -942,11 +968,12 @@
     }
 
     &__general-item-img img {
-      max-width: 160px;
+      max-width: 200px;
     }
 
     &__general-item {
       margin-bottom: 40px;
+      gap: 0px;
     }
 
     &__general-shedule-procent-wrapper {

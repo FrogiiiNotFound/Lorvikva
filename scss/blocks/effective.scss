@@ -106,7 +106,7 @@
 @media (max-width: 528px) {
   .effective {
     &__title {
-      font-size: 40px;
+      font-size: 38px;
     }
 
     &__subtitle {
@@ -115,6 +115,11 @@
 
     &__row {
       gap: 70px;
+    }
+
+    &__row-item {
+      max-height: inherit;
+      padding: 60px 20px 40px 20px;
     }
   }
 }
