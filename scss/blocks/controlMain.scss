@@ -1,5 +1,4 @@
 .control-main {
-
   &__title {
     font-weight: 900;
     font-size: 64px;
@@ -16,11 +15,18 @@
   }
 
   &__steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 55px 40px;
     margin-bottom: 80px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -84,7 +90,11 @@
   }
 
   &__info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 30px;
     margin-bottom: 20px;
@@ -103,5 +113,140 @@
     font-size: 24px;
     color: #fff;
     padding: 40px;
+    margin-bottom: 80px;
+  }
+
+  &__info-title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #020202;
+  }
+}
+
+@media (max-width: 1250px) {
+  .control-main {
+    &__title {
+      font-size: 58px;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+    }
+
+    &__steps {
+      gap: 80px 40px;
+    }
+
+    &__info-title {
+      font-size: 32px;
+    }
+
+    &__info-item {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+
+    &__item-text {
+      font-size: 20px;
+    }
+
+    &__addition {
+      font-size: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .control-main {
+    &__title {
+      font-size: 48px;
+      margin-top: 80px;
+      margin-bottom: 24px;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    &__step {
+      padding: 60px 20px 30px 20px;
+    }
+
+    &__step-number {
+      font-size: 20px;
+      padding: 13px 40px;
+    }
+
+    &__step-title {
+      font-size: 22px;
+    }
+
+    &__step-text {
+      font-size: 14px;
+    }
+
+    &__info-title {
+      font-size: 28px;
+    }
+
+    &__item-text {
+      font-size: 18px;
+    }
+
+    &__addition {
+      font-size: 18px;
+      padding: 24px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 528px) {
+  .control-main {
+    &__title {
+      font-size: 40px;
+      margin-top: 60px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+
+    &__steps {
+      gap: 60px 20px;
+    }
+
+    &__step {
+      max-width: 100%;
+      padding: 50px 15px 25px 15px;
+    }
+
+    &__step-number {
+      font-size: 16px;
+      padding: 10px 30px;
+      margin-top: -70px;
+    }
+
+    &__step-title {
+      font-size: 20px;
+    }
+
+    &__info-title {
+      font-size: 24px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+
+    &__addition {
+      font-size: 16px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
   }
 }

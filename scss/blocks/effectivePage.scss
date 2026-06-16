@@ -13,11 +13,17 @@
   &__btns {
     position: relative;
     z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 80px;
     margin-bottom: 80px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   &__btn {
@@ -40,9 +46,13 @@
     text-align: center;
     color: rgba(101, 70, 166, 0.7);
     min-width: 620px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-tap-highlight-color: transparent;
-    appearance: none;
+    -moz-appearance: none;
+         appearance: none;
     -webkit-appearance: none;
   }
 
@@ -71,8 +81,12 @@
   }
 
   &__cns-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 40px;
     margin-bottom: 80px;
   }
@@ -165,8 +179,12 @@
   }
 
   &__cns-schedule-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 30px;
     margin-bottom: 40px;
   }
@@ -258,8 +276,12 @@
 
   &__general-item {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 40px;
     margin-bottom: 80px;
   }
@@ -345,9 +367,15 @@
   }
 
   &__general-learn-more-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0px 40px 80px 40px;
   }
 
@@ -401,8 +429,12 @@
   }
 
   &__general-shedule-procent-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 30px;
     margin-bottom: 40px;
   }

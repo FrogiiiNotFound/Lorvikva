@@ -25,6 +25,8 @@
   }
 
   &__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
   }
@@ -46,14 +48,12 @@
     font-size: 20px;
     color: #ffa500;
     margin-bottom: 30px;
-    margin-top: 20px;
   }
 
   &__row-text {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    max-width: 380px;
   }
 
   &__decor1 {

@@ -1,0 +1,30 @@
+.addition {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 20px;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #332c3a;
+    margin-bottom: 20px;
+  }
+
+  &__list-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #332c3a;
+  }
+}

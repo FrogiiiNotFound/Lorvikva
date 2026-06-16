@@ -1,0 +1,23 @@
+.addition {
+  margin-bottom: 40px;
+}
+.addition__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #332c3a;
+  margin-bottom: 20px;
+}
+.addition__text span {
+  font-weight: 400;
+}
+.addition__list-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #332c3a;
+  margin-bottom: 20px;
+}
+.addition__list-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #332c3a;
+}

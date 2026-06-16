@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   accordeons.forEach(accordeon => {
     const header = accordeon.querySelector('.control-accordeon__accordeon-header');
-    const icon = accordeon.querySelector('.control-accordeon__accordeon-icon-arrow');
+    const icon = accordeon.querySelector('.control-accordeon__accordeon-icon');
     const content = accordeon.querySelector('.control-accordeon__accordeon-content');
 
     header.addEventListener('click', () => {
@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       if (isExpanded) {
         content.style.display = 'none';
-        icon.style.transform = 'rotate(0deg)';
+        icon.classList.remove('active');
       } else {
         content.style.display = 'block';
-        icon.style.transform = 'rotate(180deg)';
+        icon.classList.add('active');
       }
     });
 
