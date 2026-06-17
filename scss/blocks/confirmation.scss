@@ -54,6 +54,7 @@
   }
 
   &__btn-close {
+    cursor: pointer;
     color: #000;
     margin-bottom: 12px;
     text-align: right;
@@ -75,6 +76,7 @@
   }
 
   &__btn-yes {
+    cursor: pointer;
     width: fit-content;
     border-radius: 100px;
     background: #e97300;
@@ -168,14 +170,24 @@
     }
   }
 
+  // Фиксированный размер рамки-кружка: не зависит от padding и не "распирается"
+  // при появлении внутренней точки (display: none -> block)
   &__answer-popup-answer-dot-wrapper {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
     border: 1px solid #fff;
-    padding: 10px;
   }
 
   &__answer-popup-answer-dot {
     display: none;
+    flex-shrink: 0;
+    box-sizing: border-box;
     border-radius: 100%;
     background-color: #ffa500;
     width: 20px;
@@ -271,7 +283,8 @@
     }
 
     &__answer-popup-answer-dot-wrapper {
-      padding: 8px;
+      width: 34px;
+      height: 34px;
     }
 
     &__answer-popup-answer-dot {
@@ -316,7 +329,7 @@
 
       > a {
         display: flex;
-        width: 100%; // унаследуется только на мобильных через медиа-запрос ниже
+        width: 100%;
       }
     }
 
@@ -361,7 +374,8 @@
     }
 
     &__answer-popup-answer-dot-wrapper {
-      padding: 7px;
+      width: 30px;
+      height: 30px;
     }
 
     &__answer-popup-answer-dot {
@@ -444,8 +458,8 @@
     }
 
     &__answer-popup-answer-dot-wrapper {
-      padding: 6px;
-      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
     }
 
     &__answer-popup-answer-dot {

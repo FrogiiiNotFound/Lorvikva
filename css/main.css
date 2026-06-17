@@ -3471,6 +3471,9 @@ sup {
     margin-bottom: 40px;
   }
 }
+.control-accordeon {
+  cursor: pointer;
+}
 .control-accordeon__accordeon-header {
   padding: 22px 40px;
   position: relative;
@@ -4637,6 +4640,7 @@ sup {
   padding: 25px 26px 90px 80px;
 }
 .confirmation__btn-close {
+  cursor: pointer;
   color: #000;
   margin-bottom: 12px;
   text-align: right;
@@ -4661,6 +4665,7 @@ sup {
   gap: 30px;
 }
 .confirmation__btn-yes {
+  cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -4750,12 +4755,30 @@ sup {
   display: block;
 }
 .confirmation__answer-popup-answer-dot-wrapper {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 100px;
   border: 1px solid #fff;
-  padding: 10px;
 }
 .confirmation__answer-popup-answer-dot {
   display: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 100%;
   background-color: #ffa500;
   width: 20px;
@@ -4840,7 +4863,8 @@ sup {
     margin-bottom: 16px;
   }
   .confirmation__answer-popup-answer-dot-wrapper {
-    padding: 8px;
+    width: 34px;
+    height: 34px;
   }
   .confirmation__answer-popup-answer-dot {
     width: 16px;
@@ -4915,7 +4939,8 @@ sup {
     margin-bottom: 14px;
   }
   .confirmation__answer-popup-answer-dot-wrapper {
-    padding: 7px;
+    width: 30px;
+    height: 30px;
   }
   .confirmation__answer-popup-answer-dot {
     width: 14px;
@@ -4981,9 +5006,8 @@ sup {
     margin-bottom: 12px;
   }
   .confirmation__answer-popup-answer-dot-wrapper {
-    padding: 6px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    width: 26px;
+    height: 26px;
   }
   .confirmation__answer-popup-answer-dot {
     width: 12px;
