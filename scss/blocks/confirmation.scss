@@ -55,9 +55,9 @@
 
   &__btn-close {
     cursor: pointer;
+    width: fit-content;
     color: #000;
-    margin-bottom: 12px;
-    text-align: right;
+    margin: 0px 20px 0px auto;
   }
 
   &__title {
@@ -83,6 +83,10 @@
     padding: 26px 98px;
     transition: 0.1s ease-out all;
 
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+
     &:hover {
       background: #d36900;
       transform: scale(1.1);
@@ -92,28 +96,21 @@
     }
   }
 
-  &__btn-yes-text {
-    font-weight: 600;
-    font-size: 20px;
-    color: #fff;
-  }
-
   &__btn-no {
+    display: inline-block;
     width: fit-content;
     border: 1px solid #fff;
     border-radius: 100px;
     padding: 26px 88px;
     transition: 0.1s ease-out all;
 
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &__btn-no-text {
     font-weight: 600;
     font-size: 20px;
     color: #fff;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

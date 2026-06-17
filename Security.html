@@ -13,11 +13,11 @@
       <header class="header header-pages">
         <div class="header__container header__container-pages _container">
           <div class="header__upper-content">
-            <a href="index.html">
-              <div class="header__logo">
+            <div class="header__logo">
+              <a href="index.html">
                 <img src="images/pagesHeader/logo.png" alt="logo" />
-              </div>
-            </a>
+              </a>
+            </div>
             <div class="header__decor">
               <img src="images/pagesHeader/decor.png" alt="header-decor" />
             </div>
@@ -70,8 +70,10 @@
       <main class="main">
         <section class="security">
           <div class="security__container _container">
-            <h2 class="security__title">Безопасность препарата ЛОРВИКВА<sup>®</sup></h2>
-            <h3 class="security__subtitle">
+            <h2 class="security__title animated-text">
+              Безопасность препарата ЛОРВИКВА<sup>®</sup>
+            </h2>
+            <h3 class="security__subtitle title-animation">
               Нежелательные явления хорошо изучены и не менялись в течение 7 лет наблюдения,
               большинство из них возникали на ранних стадиях лечения <sup>1,2*</sup>
             </h3>
@@ -80,7 +82,7 @@
                 <div class="security__item-img">
                   <img src="images/security/icon1.png" alt="item-img" />
                 </div>
-                <p class="security__item-title">
+                <p class="security__item-title title-animation">
                   Большинство НЯ наблюдались в течение <span>первых 6 месяцев</span> лечения<sup
                     >2,3</sup
                   >
@@ -90,7 +92,7 @@
                 <div class="security__item-img">
                   <img src="images/security/icon2.png" alt="item-img" />
                 </div>
-                <p class="security__item-title">
+                <p class="security__item-title title-animation">
                   По результатам 7‑летнего наблюдения
                   <span>не выявлено увеличения частоты НЯ</span> 3–4 степени тяжести<sup>1†</sup>
                 </p>
@@ -102,7 +104,9 @@
                   <img src="images/security/procent-icon.png" alt="procent-icon" />
                 </div>
                 <div class="security__procent-item-texts">
-                  <p class="security__procent-item-procent">только<span>5%</span></p>
+                  <p class="security__procent-item-procent title-animation">
+                    только<span>5%</span>
+                  </p>
                   <p class="security__procent-item-text">
                     пациентов <span>прекратили лечение ЛОРВИКВА®</span> из-за НЯ, связанными с
                     проводимой терапией<sup>1</sup>.
@@ -117,7 +121,7 @@
                 ПРОАКТИВНОЕ УПРАВЛЕНИЕ НЕЖЕЛАТЕЛЬНЫМИ ЯВЛЕНИЯМИ МОЖЕТ ПОЗВОЛИТЬ ПАЦИЕНТАМ ДОЛЬШЕ
                 ОСТАВАТЬСЯ НА ТЕРАПИИ<sup>2</sup>
               </p>
-              <p class="security__profile">
+              <p class="security__profile title-animation">
                 Профиль безопасности препарата ЛОРВИКВА® по результатам анализа данных 7-летнего
                 наблюдения соответствовал профилю безопасности, установленному в первичном анализе.
                 Новых сигналов по безопасности не выявлено<sup>1</sup>*
@@ -145,8 +149,10 @@
                 <div class="management__container _container">
                   <div class="management__content">
                     <div class="management__texts">
-                      <h2 class="management__title">Управление терапией и контроль НЯ</h2>
-                      <h3 class="management__subtitle">
+                      <h2 class="management__title animated-text">
+                        Управление терапией и контроль НЯ
+                      </h2>
+                      <h3 class="management__subtitle title-animation">
                         Основные шаги для <span>контроля нежелательных явлений</span> во время
                         лечения препаратом ЛОРВИКВА<sup>®</sup>
                       </h3>
@@ -165,7 +171,7 @@
                 </div>
               </section>
               <div class="security__column">
-                <h3 class="security__column-title">
+                <h3 class="security__column-title title-animation">
                   НЯ (любой степени), возникавшие у ≥20% пациентов, получавших препарат ЛОРВИКВА® (n
                   = 149)<sup>1</sup>
                 </h3>
@@ -182,7 +188,7 @@
               </div>
               <section class="characteristic">
                 <div class="characteristic__container _container">
-                  <h2 class="characteristic__title">
+                  <h2 class="characteristic__title title-animation">
                     Общая характеристика лекарственного препарата
                   </h2>
                   <div class="characteristic__logo">
@@ -250,10 +256,13 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 
     <script src="index.js"></script>
     <script src="./js/headerMenu.js"></script>
     <script src="./js/effectivePageButtons.js"></script>
     <script src="./js/videoPageButtons.js"></script>
+    <script src="./js/textAnimation.js"></script>
   </body>
 </html>

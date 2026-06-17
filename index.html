@@ -63,14 +63,8 @@
                 Подтвердите, что вы являетесь специалистом здравоохранения
               </h2>
               <div class="confirmation__btns">
-                <div class="confirmation__btn-yes">
-                  <p class="confirmation__btn-yes-text">Да</p>
-                </div>
-                <a href="https://www.pfizerprofi.ru/">
-                  <div class="confirmation__btn-no">
-                    <p class="confirmation__btn-no-text">Нет</p>
-                  </div>
-                </a>
+                <button class="confirmation__btn-yes">Да</button>
+                <a class="confirmation__btn-no" href="https://www.pfizerprofi.ru/">Нет</a>
               </div>
             </div>
             <div
@@ -212,8 +206,8 @@
               <div class="home__logo">
                 <img src="./images/main-logo.png" alt="main-logo" />
               </div>
-              <h1 class="home__title">CROWN</h1>
-              <p class="home__text">
+              <h1 class="home__title animated-text">CROWN</h1>
+              <p class="home__text title-animation">
                 > <span>7 ЛЕТ ВБП</span> <br />
                 в 1-й линии ALK+ мНМРЛ<sup>1</sup>
               </p>
@@ -232,14 +226,16 @@
 
         <section class="effective">
           <div class="effective__container _container">
-            <h2 class="effective__title">Максимизируйте эффективность</h2>
-            <h3 class="effective__subtitle">1-й линии терапии <span>ALK+ мНМРЛ</span></h3>
+            <h2 class="effective__title animated-text">Максимизируйте эффективность</h2>
+            <h3 class="effective__subtitle title-animation">
+              1-й линии терапии <span>ALK+ мНМРЛ</span>
+            </h3>
             <div class="effective__row">
               <div class="effective__row-item">
                 <div class="effective__row-img">
                   <img src="images/effective/row-img1.png" alt="row-img" />
                 </div>
-                <p class="effective__row-title">
+                <p class="effective__row-title title-animation">
                   Длительность ВБП 1‑й линии лечения является значимым вкладом в выживаемость
                   пациентов<sup>1-4</sup>
                 </p>
@@ -253,7 +249,7 @@
                 <div class="effective__row-img">
                   <img src="images/effective/row-img2.png" alt="row-img" />
                 </div>
-                <p class="effective__row-title">
+                <p class="effective__row-title title-animation">
                   1-я линия терапии — наилучшая возможность максимально повлиять на клинические<sup
                     >5</sup
                   >
@@ -269,7 +265,7 @@
                 <div class="effective__row-img">
                   <img src="images/effective/row-img3.png" alt="row-img" />
                 </div>
-                <p class="effective__row-title">
+                <p class="effective__row-title title-animation">
                   Терапия 1‑й линии должна обеспечивать защиту от неблагоприятного влияния
                   метастазов в головной мозг<sup>8</sup>
                 </p>
@@ -292,8 +288,10 @@
           <div class="slider__container _container">
             <div class="slider__slide">
               <div class="slider__main-info">
-                <h3 class="slider__slide-subtitle">Трансформация ALK+ мНМРЛ</h3>
-                <h2 class="slider__slide-title">в контролируемое хроническое заболевание*</h2>
+                <h3 class="slider__slide-subtitle title-animation">Трансформация ALK+ мНМРЛ</h3>
+                <h2 class="slider__slide-title animated-text">
+                  в контролируемое хроническое заболевание*
+                </h2>
                 <div class="slider__slide-info swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -381,9 +379,9 @@
               <img src="images/slider/slider-main.png" alt="slider-main" />
             </div>
             <div class="slider__addition">
-              <p class="slider__addition-text">
+              <p class="slider__addition-text title-animation">
                 Дизайн исследования <br />
-                <span>CROWN</span>
+                <span class="animated-text">CROWN</span>
               </p>
               <div class="slider__addition-image">
                 <img src="images/slider/addition-image.png" alt="addition-image" />
@@ -457,8 +455,8 @@
           <div class="management__container _container">
             <div class="management__content">
               <div class="management__texts">
-                <h2 class="management__title">Управление терапией и контроль НЯ</h2>
-                <h3 class="management__subtitle">
+                <h2 class="management__title animated-text">Управление терапией и контроль НЯ</h2>
+                <h3 class="management__subtitle title-animation">
                   Основные шаги для <span>контроля нежелательных явлений</span> во время лечения
                   препаратом ЛОРВИКВА<sup>®</sup>
                 </h3>
@@ -479,8 +477,8 @@
         <section class="home-videos">
           <div class="home-videos__container _container">
             <div class="home-videos__texts">
-              <h2 class="home-videos__title">Видеоматериалы</h2>
-              <h3 class="home-videos__subtitle">
+              <h2 class="home-videos__title animated-text">Видеоматериалы</h2>
+              <h3 class="home-videos__subtitle title-animation">
                 Лекции и вебинары посвященные новому прорыву в исследовании CROWN
               </h3>
             </div>
@@ -538,7 +536,9 @@
 
         <section class="characteristic">
           <div class="characteristic__container _container">
-            <h2 class="characteristic__title">Общая характеристика лекарственного препарата</h2>
+            <h2 class="characteristic__title animated-text">
+              Общая характеристика лекарственного препарата
+            </h2>
             <div class="characteristic__logo">
               <img src="images/characteristic/logo.png" alt="logo" />
             </div>
@@ -662,11 +662,14 @@
         </div>
       </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="slider.js"></script>
     <script src="index.js"></script>
     <script src="./js/headerMenu.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/textAnimation.js"></script>
   </body>
 </html>

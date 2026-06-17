@@ -365,6 +365,16 @@ sup {
   display: none;
 }
 
+.title-animation {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.title-animation-visible {
+  opacity: 1;
+}
+
 /* ============================================================================== */
 @media (max-width: 1250px) {
   .home {
@@ -1036,6 +1046,9 @@ sup {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
+.home-videos__video-img2 img {
+  border-radius: 20px;
+}
 .home-videos__video-content {
   padding: 0px 20px;
   position: absolute;
@@ -1440,6 +1453,9 @@ sup {
   .regimen__title {
     font-size: 40px;
   }
+  .regimen__row-item {
+    min-width: 100%;
+  }
 }
 .header_nav-pages {
   background: rgba(61, 25, 100, 0.55);
@@ -1453,9 +1469,9 @@ sup {
 }
 
 .header__logo {
-  cursor: pointer;
+  display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0px auto 20px auto;
 }
 
 .header__container-pages {
@@ -4247,6 +4263,7 @@ sup {
 
 .management {
   margin-bottom: 80px;
+  padding: 0px 15px;
 }
 .management__container {
   position: relative;
@@ -4641,9 +4658,11 @@ sup {
 }
 .confirmation__btn-close {
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #000;
-  margin-bottom: 12px;
-  text-align: right;
+  margin: 0px 20px 0px auto;
 }
 .confirmation__title {
   font-weight: 700;
@@ -4674,6 +4693,9 @@ sup {
   padding: 26px 98px;
   -webkit-transition: 0.1s ease-out all;
   transition: 0.1s ease-out all;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
 }
 .confirmation__btn-yes:hover {
   background: #d36900;
@@ -4683,12 +4705,8 @@ sup {
 .confirmation__btn-yes:active {
   background: #b65b00;
 }
-.confirmation__btn-yes-text {
-  font-weight: 600;
-  font-size: 20px;
-  color: #fff;
-}
 .confirmation__btn-no {
+  display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -4697,15 +4715,13 @@ sup {
   padding: 26px 88px;
   -webkit-transition: 0.1s ease-out all;
   transition: 0.1s ease-out all;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
 }
 .confirmation__btn-no:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-.confirmation__btn-no-text {
-  font-weight: 600;
-  font-size: 20px;
-  color: #fff;
 }
 
 .confirmation__answer-popup {

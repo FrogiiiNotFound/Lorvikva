@@ -55,6 +55,15 @@
   }
 }
 
+.title-animation {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.title-animation-visible {
+  opacity: 1;
+}
+
 /* ============================================================================== */
 
 @media (max-width: 1250px) {

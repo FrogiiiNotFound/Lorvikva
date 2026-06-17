@@ -13,11 +13,11 @@
       <header class="header header-pages">
         <div class="header__container header__container-pages _container">
           <div class="header__upper-content">
-            <a href="index.html">
-              <div class="header__logo">
+            <div class="header__logo">
+              <a href="index.html">
                 <img src="images/pagesHeader/logo.png" alt="logo" />
-              </div>
-            </a>
+              </a>
+            </div>
             <div class="header__decor">
               <img src="images/pagesHeader/decor.png" alt="header-decor" />
             </div>
@@ -70,8 +70,8 @@
       <main class="main">
         <section class="reduction">
           <div class="reduction__container _container">
-            <h2 class="reduction__title">Редукция дозы</h2>
-            <h3 class="reduction__subtitle">
+            <h2 class="reduction__title animated-text">Редукция дозы</h2>
+            <h3 class="reduction__subtitle title-animation">
               Большинство нежелательных явления на терапии ЛОРВИКВА® эффективно контролировались с
               помощью коррекции дозы<sup>1</sup>
             </h3>
@@ -119,7 +119,7 @@
             </p>
             <div class="reduction__images">
               <div class="reduction__image">
-                <h3 class="reduction__image-title">
+                <h3 class="reduction__image-title title-animation">
                   Выживаемость без прогрессирования у пациентов со снижением дозы в течение первых
                   26 недель<sup>2</sup>
                 </h3>
@@ -128,7 +128,7 @@
                 </div>
               </div>
               <div class="reduction__image">
-                <h3 class="reduction__image-title">
+                <h3 class="reduction__image-title title-animation">
                   Время до прогрессирования в ЦНС у пациентов со снижением дозы в течение первых 26
                   недель<sup>2</sup>
                 </h3>
@@ -173,7 +173,7 @@
             </p>
             <section class="characteristic">
               <div class="characteristic__container _container">
-                <h2 class="characteristic__title">Общая характеристика лекарственного препарата</h2>
+                <h2 class="characteristic__title animated-text">Общая характеристика лекарственного препарата</h2>
                 <div class="characteristic__logo">
                   <img src="images/characteristic/logo.png" alt="logo" />
                 </div>
@@ -240,8 +240,11 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 
     <script src="index.js"></script>
     <script src="./js/headerMenu.js"></script>
+    <script src="./js/textAnimation.js"></script>
   </body>
 </html>

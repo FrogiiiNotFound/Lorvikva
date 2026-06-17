@@ -6,13 +6,13 @@
 }
 
 .header-pages {
-  background: url("../../images/pagesHeader/decor.png") center/cover no-repeat;
+  background: url('../../images/pagesHeader/decor.png') center/cover no-repeat;
 }
 
 .header__logo {
-  cursor: pointer;
+  display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0px auto 20px auto;
 }
 
 .header__container-pages {
