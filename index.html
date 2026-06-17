@@ -64,7 +64,7 @@
               </h2>
               <div class="confirmation__btns">
                 <button class="confirmation__btn-yes">Да</button>
-                <a class="confirmation__btn-no" href="https://www.pfizerprofi.ru/">Нет</a>
+                <a href="https://www.pfizerprofi.ru/"><p class="confirmation__btn-no">Нет</p></a>
               </div>
             </div>
             <div
@@ -483,7 +483,7 @@
               </h3>
             </div>
             <div class="home-videos__videos">
-              <div class="home-videos__video home-videos__video1">
+              <div class="home-videos__video home-videos__video1" data-video="./videos/sample.mp4">
                 <div class="home-videos__video-img">
                   <img src="images/videos/video-frame1.png" alt="video-frame" />
                 </div>
@@ -502,7 +502,7 @@
                   </div>
                 </div>
               </div>
-              <div class="home-videos__video home-videos__video2">
+              <div class="home-videos__video home-videos__video2" data-video="./videos/sample.mp4">
                 <div class="home-videos__video-img home-videos__video-img2">
                   <img src="images/videos/video-frame2.png" alt="video-frame" />
                 </div>
@@ -629,6 +629,17 @@
             </div>
           </div>
         </section>
+        <div class="video-modal" id="videoModal">
+          <div class="video-modal__overlay" id="videoClose"></div>
+
+          <div class="video-modal__content">
+            <video id="videoPlayer" controls playsinline>
+              <source src="" type="video/mp4" />
+            </video>
+
+            <div class="video-click-layer" id="videoClickLayer"></div>
+          </div>
+        </div>
       </main>
 
       <footer class="footer">
@@ -671,5 +682,6 @@
     <script src="./js/headerMenu.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/textAnimation.js"></script>
+    <script src="./js/videoPlayerHomePage.js"></script>
   </body>
 </html>

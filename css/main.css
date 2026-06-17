@@ -1020,6 +1020,7 @@ sup {
   gap: 20px;
 }
 .home-videos__video {
+  cursor: pointer;
   border-radius: 20px;
   position: relative;
 }
@@ -1277,9 +1278,12 @@ sup {
     padding: 0px 0px 50px;
   }
 }
+.footer {
+  padding: 50px 0px;
+}
 .footer__container {
-  padding: 20px 25px 50px 25px;
-  border-radius: 20px 20px 0 0;
+  padding: 20px 25px;
+  border-radius: 20px;
   background: #6546a6;
 }
 .footer__row {
@@ -1811,7 +1815,6 @@ sup {
 }
 .videos__btn {
   position: relative;
-  z-index: 1;
   cursor: pointer;
   border: 1px solid #8e77ff;
   border-radius: 40px;
@@ -1860,6 +1863,7 @@ sup {
 }
 .videos__video {
   position: relative;
+  cursor: pointer;
 }
 .videos__video-content {
   position: absolute;
@@ -2017,6 +2021,72 @@ sup {
   z-index: -10;
 }
 
+.video-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000000000000000;
+}
+
+.video-modal.active {
+  display: block;
+}
+
+.video-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.video-modal__content {
+  position: relative;
+  width: 60vw;
+  height: 60vh;
+  margin: 10vh auto;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-modal__content video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-modal__content {
+  position: relative;
+}
+
+.video-click-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.video-click-layer {
+  display: none;
+}
+
+.video-modal__overlay {
+  z-index: 1;
+}
+
+.video-modal__content {
+  z-index: 2;
+}
+
 /* ============================================================================== */
 @media (max-width: 1250px) {
   .videos__title {
@@ -2051,6 +2121,9 @@ sup {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .video-modal__content {
+    width: 93vw;
   }
 }
 @media (max-width: 768px) {
@@ -2095,9 +2168,18 @@ sup {
   }
   .videos__article-article-long {
     padding: 20px 40px;
+    margin: 0px 15px;
+    min-width: inherit;
+    max-width: 100%;
   }
   .videos__article-img img {
     max-width: 100%;
+    border-radius: 20px;
+  }
+  .videos__materials-article {
+    min-width: inherit;
+    max-width: 100%;
+    margin: 0px 15px;
   }
 }
 .effective-page__title {
@@ -2166,8 +2248,14 @@ sup {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 40px;
   margin-bottom: 80px;
+}
+.effective-page__cns-item-icon {
+  margin-left: -80px;
+  margin-bottom: -140px;
+}
+.effective-page__cns-item-texts {
+  margin-left: -70px;
 }
 .effective-page__cns-procents {
   font-weight: 500;
@@ -2317,7 +2405,6 @@ sup {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 40px;
   margin-bottom: 80px;
 }
 .effective-page__general-item-decor {
@@ -2325,6 +2412,9 @@ sup {
   bottom: -80px;
   left: 100px;
   z-index: -10;
+}
+.effective-page__general-texts {
+  margin-left: -20px;
 }
 .effective-page__general-procent {
   font-weight: 500;
@@ -2822,6 +2912,16 @@ sup {
   }
   .effective-page__general-item {
     margin-bottom: 50px;
+  }
+  .effective-page__general-texts {
+    margin-left: 0px;
+  }
+  .effective-page__cns-item-texts {
+    margin-left: 0px;
+  }
+  .effective-page__cns-item-icon {
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 528px) {
@@ -4593,6 +4693,9 @@ sup {
   }
 }
 @media (max-width: 768px) {
+  .characteristic {
+    padding: 0px;
+  }
   .characteristic__decor2 {
     opacity: 0.4;
   }
@@ -4682,6 +4785,7 @@ sup {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  text-align: center;
 }
 .confirmation__btn-yes {
   cursor: pointer;
@@ -4706,7 +4810,7 @@ sup {
   background: #b65b00;
 }
 .confirmation__btn-no {
-  display: inline-block;
+  display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -4715,6 +4819,7 @@ sup {
   padding: 26px 88px;
   -webkit-transition: 0.1s ease-out all;
   transition: 0.1s ease-out all;
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   color: #fff;
@@ -4924,10 +5029,11 @@ sup {
     display: flex;
     width: 100%;
   }
-  .confirmation__btn-yes, .confirmation__btn-no {
+  .confirmation__btn-no, .confirmation__btn-yes {
+    display: block;
     width: 100%;
-    text-align: center;
     padding: 18px 32px;
+    text-align: center;
   }
   .confirmation__btn-yes-text, .confirmation__btn-no-text {
     font-size: 16px;
@@ -4991,6 +5097,7 @@ sup {
     gap: 12px;
   }
   .confirmation__btn-yes, .confirmation__btn-no {
+    text-align: center;
     padding: 15px 20px;
   }
   .confirmation__btn-yes-text, .confirmation__btn-no-text {

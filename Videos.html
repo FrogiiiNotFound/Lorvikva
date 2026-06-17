@@ -81,7 +81,7 @@
             </div>
             <div class="videos__content">
               <div class="videos__videos-page">
-                <div class="videos__video">
+                <div class="videos__video" data-video="./videos/sample.mp4">
                   <div class="videos__img">
                     <img src="images/videoPage/video-img.png" alt="video-img" />
                   </div>
@@ -97,7 +97,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="videos__video">
+                <div class="videos__video" id="videoCard" data-video="./videos/sample.mp4">
+                  <div class="videos__img">
+                    <img src="images/videoPage/video-img.png" alt="video-img" />
+                  </div>
+
+                  <div class="videos__video-content">
+                    <div class="videos__video-texts">
+                      <p class="videos__video-subtitle">Данилова Анастасия Сергеевна</p>
+                      <h3 class="videos__video-title title-animation">
+                        CROWN 7 лет спустя: кто получил «корону» в терапии ALK+ мНМРЛ?
+                      </h3>
+                    </div>
+
+                    <div class="videos__play">
+                      <img src="images/videoPage/play.png" alt="play-button" />
+                    </div>
+                  </div>
+                </div>
+                <div class="videos__video" data-video="./videos/sample.mp4">
                   <div class="videos__img">
                     <img src="images/videoPage/video-img.png" alt="video-img" />
                   </div>
@@ -113,23 +131,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="videos__video">
-                  <div class="videos__img">
-                    <img src="images/videoPage/video-img.png" alt="video-img" />
-                  </div>
-                  <div class="videos__video-content">
-                    <div class="videos__video-texts">
-                      <p class="videos__video-subtitle">Данилова Анастасия Сергеевна</p>
-                      <h3 class="videos__video-title title-animation">
-                        CROWN 7 лет спустя: кто получил «корону» в терапии ALK+ мНМРЛ?
-                      </h3>
-                    </div>
-                    <div class="videos__play">
-                      <img src="images/videoPage/play.png" alt="play-button" />
-                    </div>
-                  </div>
-                </div>
-                <div class="videos__video">
+                <div class="videos__video" data-video="./videos/sample.mp4">
                   <div class="videos__img">
                     <img src="images/videoPage/video-img.png" alt="video-img" />
                   </div>
@@ -214,7 +216,9 @@
             </div>
             <section class="characteristic">
               <div class="characteristic__container _container">
-                <h2 class="characteristic__title title-animation">Общая характеристика лекарственного препарата</h2>
+                <h2 class="characteristic__title title-animation">
+                  Общая характеристика лекарственного препарата
+                </h2>
                 <div class="characteristic__logo">
                   <img src="images/characteristic/logo.png" alt="logo" />
                 </div>
@@ -229,6 +233,17 @@
                 </div>
               </div>
             </section>
+          </div>
+          <div class="video-modal" id="videoModal">
+            <div class="video-modal__overlay" id="videoClose"></div>
+
+            <div class="video-modal__content">
+              <div class="video-click-layer" id="videoClickLayer"></div>
+
+              <video id="videoPlayer" controls playsinline>
+                <source src="" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </section>
       </main>
@@ -271,5 +286,6 @@
     <script src="./js/headerMenu.js"></script>
     <script src="./js/videoPageButtons.js"></script>
     <script src="./js/textAnimation.js"></script>
+    <script src="./js/videoPlayer.js"></script>
   </body>
 </html>
