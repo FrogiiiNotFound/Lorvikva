@@ -35,6 +35,7 @@
   &__slide-info {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 44px;
 
     .swiper-slide {
       box-sizing: border-box;
@@ -51,7 +52,7 @@
     font-weight: 700;
     font-size: 24px;
     color: #000;
-    margin-bottom: 42px;
+    margin-bottom: 10px;
 
     & span {
       font-weight: 400;
@@ -84,6 +85,10 @@
     font-weight: 400;
     font-size: 24px;
     color: #000;
+
+    & span {
+      font-weight: 700;
+    }
   }
 
   &__main-image {
@@ -150,7 +155,7 @@
 
   &__decor {
     position: absolute;
-    bottom: 480px;
+    top: 420px;
     left: -210px;
     z-index: -10;
   }
@@ -167,6 +172,45 @@
   }
   &__addition-image2 {
     display: none;
+  }
+
+  &__addition-decor {
+    position: absolute;
+    bottom: 530px;
+    left: -370px;
+    z-index: -10;
+  }
+
+  &__addition-content-close-btn {
+    width: fit-content;
+    cursor: pointer;
+    margin: 0px auto;
+    transition: 0.2s ease-out all;
+  }
+
+  &__slide-info-text2 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #a1a0b3;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__slide-text2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__slide-texts {
+    margin-bottom: 42px;
   }
 }
 
@@ -230,6 +274,10 @@
       & img {
         max-width: 80px;
       }
+    }
+
+    &__addition-content-text-addition {
+      margin-bottom: 44px;
     }
   }
 }
@@ -383,8 +431,6 @@
   }
 }
 
-/* === slider__addition-content === */
-
 .slider__addition-content {
   margin-top: 40px;
   padding: 40px;
@@ -393,6 +439,7 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(142, 119, 255, 0.3);
+  position: relative;
 
   &-text {
     font-weight: 400;

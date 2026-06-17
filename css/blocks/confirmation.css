@@ -1,0 +1,60 @@
+.confirmation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.confirmation__first-popup {
+  padding: 25px 26px 90px 80px;
+}
+.confirmation__btn-close {
+  color: #000;
+  margin-bottom: 12px;
+  text-align: right;
+}
+.confirmation__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.confirmation__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.confirmation__btn-yes {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 100px;
+  background: #e97300;
+  padding: 26px 98px;
+}
+.confirmation__btn-yes-text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+.confirmation__btn-no {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 26px 88px;
+}
+.confirmation__btn-no-text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
