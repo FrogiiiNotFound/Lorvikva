@@ -18,9 +18,15 @@
     color: #6546a6;
     margin-bottom: 100px;
 
-    & span {
+    & span.highlight {
       font-weight: 400;
       color: #000;
+    }
+
+    & span.highlight-alk {
+      font-weight: 400;
+      color: #000;
+      font-style: italic;
     }
   }
 
@@ -39,8 +45,14 @@
     max-width: 420px;
   }
 
+  &__row-img img {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
   &__row-img {
     margin-top: -100px;
+    margin-bottom: 20px;
   }
 
   &__row-title {

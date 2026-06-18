@@ -3,6 +3,7 @@
   }
 
   &__title {
+    max-width: 800px;
     font-weight: 900;
     font-size: 64px;
     color: #ffa500;
@@ -19,7 +20,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 80px;
+    gap: 52px;
     margin-bottom: 80px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -30,11 +31,10 @@
     position: relative;
     z-index: 1;
     cursor: pointer;
-    border: 1px solid #8e77ff;
+    border: 1px solid #D8CEEB;
     border-radius: 40px;
     padding: 46px 73px;
-    background-color: rgba(255, 255, 255, 0.4);
-    background-image: radial-gradient(
+    background: radial-gradient(
       278.82% 137.51% at 1.95% 3.59%,
       rgba(255, 255, 255, 0.4) 0%,
       rgba(255, 255, 255, 0) 100%
@@ -46,23 +46,19 @@
     text-align: center;
     color: rgba(101, 70, 166, 0.7);
     min-width: 620px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    -moz-appearance: none;
     appearance: none;
-    -webkit-appearance: none;
   }
 
   &__btn._active {
-    background-color: #ead7ff;
-    background-image: radial-gradient(
-      278.82% 137.51% at 1.95% 3.59%,
-      #ead7ff 17.79%,
-      rgba(255, 255, 255, 0.01) 100%
+    backdrop-filter: blur(20px);
+    background: radial-gradient(
+      110.82% 137.51% at 1.95% 3.59%,
+      #e5cffc 17.79%,
+      rgba(104, 70, 173, 0.01) 100%
     );
+    border: 1px solid #e1d5fc;
     font-weight: 700;
     color: #6546a6;
   }
@@ -473,6 +469,7 @@
   }
 
   &__general-shedule-procent-minus {
+    cursor: pointer;
     text-align: center;
   }
 
@@ -587,7 +584,7 @@
   }
 
   &__general-list {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   &__general-list-title {

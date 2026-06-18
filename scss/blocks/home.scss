@@ -22,12 +22,16 @@
   }
 
   &__text {
-    & span {
+    & span.highlight {
       font-weight: 700;
       font-size: 64px;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #fff;
+    }
+
+    & span.highlight-alk {
+      font-style: italic;
     }
 
     font-weight: 400;

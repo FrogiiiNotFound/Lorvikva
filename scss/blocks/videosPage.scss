@@ -24,12 +24,12 @@
 
   &__btn {
     position: relative;
+    z-index: 1;
     cursor: pointer;
-    border: 1px solid #8e77ff;
+    border: 1px solid #d8ceeb;
     border-radius: 40px;
     padding: 46px 73px;
-    background-color: rgba(255, 255, 255, 0.4);
-    background-image: radial-gradient(
+    background: radial-gradient(
       278.82% 137.51% at 1.95% 3.59%,
       rgba(255, 255, 255, 0.4) 0%,
       rgba(255, 255, 255, 0) 100%
@@ -44,13 +44,16 @@
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     appearance: none;
-    -webkit-appearance: none;
   }
 
   &__btn._active {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background-color: #ead7ff;
+    backdrop-filter: blur(20px);
+    background: radial-gradient(
+      110.82% 137.51% at 1.95% 3.59%,
+      #e5cffc 17.79%,
+      rgba(104, 70, 173, 0.01) 100%
+    );
+    border: 1px solid #e1d5fc;
     font-weight: 700;
     color: #6546a6;
   }
