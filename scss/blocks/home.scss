@@ -18,7 +18,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffa500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__text {
@@ -66,6 +66,25 @@
 
 .title-animation-visible {
   opacity: 1;
+}
+
+@keyframes anim-item-main {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.anim-item-main {
+  animation: anim-item-main 1s ease-out forwards;
 }
 
 /* ============================================================================== */
