@@ -408,9 +408,14 @@ sup {
     width: 30px;
   }
 }
+.main {
+  z-index: 20;
+}
+
 .home {
   background: url("../images/mail-image.png") center/cover no-repeat;
   padding: 200px 0px 0px 0px;
+  z-index: 10;
 }
 .home__container {
   position: relative;
@@ -473,50 +478,43 @@ sup {
   opacity: 1;
 }
 
-@-webkit-keyframes anim-item-main {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes anim-item-main {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-.anim-item-main {
-  -webkit-animation: anim-item-main 1s ease-out forwards;
-          animation: anim-item-main 1s ease-out forwards;
-}
-
 .no-scroll {
   overflow: hidden;
 }
 
+.anim-item-main {
+  position: relative;
+  z-index: 1;
+  -webkit-animation: slideUpFade 1.2s ease-out forwards;
+          animation: slideUpFade 1.2s ease-out forwards;
+  will-change: transform;
+}
+
+@-webkit-keyframes slideUpFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 /* ============================================================================== */
 @media (max-width: 1250px) {
   .home {
@@ -586,6 +584,7 @@ sup {
   }
 }
 .effective {
+  z-index: 20;
   padding: 100px 0px;
 }
 .effective__container {
@@ -2227,6 +2226,51 @@ sup {
 }
 .videos__play {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.03) 40%, rgba(255, 255, 255, 0.08) 100%);
+  backdrop-filter: blur(20px) saturate(1.1);
+  -webkit-backdrop-filter: blur(20px) saturate(1.1);
+  -webkit-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.25), inset 0 -1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.25), inset 0 -1px 1px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 10;
+}
+.videos__play:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  backdrop-filter: blur(6px) saturate(1.1);
+  -webkit-backdrop-filter: blur(6px) saturate(1.1);
+}
+.videos__play img {
+  position: relative;
+  z-index: 1;
+}
+.videos__play::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 25% 20%, rgba(255, 100, 150, 0.2) 0%, transparent 30%), radial-gradient(circle at 75% 80%, rgba(100, 180, 255, 0.18) 0%, transparent 35%);
+  mix-blend-mode: screen;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  pointer-events: none;
 }
 .videos__materials {
   display: none;
@@ -2353,6 +2397,11 @@ sup {
   top: -120px;
   right: -270px;
   z-index: -10;
+}
+.videos__video-content-decor {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
 }
 
 .video-modal {

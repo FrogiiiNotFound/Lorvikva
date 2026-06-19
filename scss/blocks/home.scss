@@ -1,6 +1,11 @@
+.main {
+  z-index: 20;
+}
+
 .home {
   background: url('../images/mail-image.png') center / cover no-repeat;
   padding: 200px 0px 0px 0px;
+  z-index: 10;
 
   &__container {
     position: relative;
@@ -68,27 +73,27 @@
   opacity: 1;
 }
 
-@keyframes anim-item-main {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+.no-scroll {
+  overflow: hidden;
 }
 
 .anim-item-main {
-  animation: anim-item-main 1s ease-out forwards;
+  position: relative;
+  z-index: 1; // на уровне home, ниже effective
+
+  animation: slideUpFade 1.2s ease-out forwards;
+  will-change: transform;
 }
 
-.no-scroll {
-  overflow: hidden;
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ============================================================================== */
