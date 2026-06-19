@@ -1,0 +1,30 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header.scss';
+@import './blocks/home.scss';
+@import './blocks/effective.scss';
+@import './blocks/slider.scss';
+@import './blocks/videos.scss';
+@import './blocks/texts.scss';
+@import './blocks/footer.scss';
+@import './blocks/regimen.scss';
+@import './blocks/headerPages.scss';
+@import './blocks/list.scss';
+@import './blocks/reduction.scss';
+@import './blocks/videosPage.scss';
+@import './blocks/effectivePage.scss';
+@import './blocks/security.scss';
+@import './blocks/controlMain.scss';
+@import './blocks/controlAccordeon.scss';
+@import './blocks/addition.scss';
+@import './blocks/management.scss';
+@import './blocks/characteristic.scss';
+@import './blocks/confirmation.scss';

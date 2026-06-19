@@ -1,0 +1,87 @@
+.control-main__title {
+  font-weight: 900;
+  font-size: 64px;
+  color: #ffa500;
+  margin-top: 100px;
+  margin-bottom: 34px;
+}
+.control-main__subtitle {
+  font-weight: 700;
+  font-size: 40px;
+  color: #2c1645;
+  margin-bottom: 40px;
+}
+.control-main__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 55px 40px;
+  margin-bottom: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.control-main__step {
+  border-radius: 20px;
+  background: #432a6b;
+  padding: 70px 40px 40px 40px;
+}
+.control-main__step-number {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 40px;
+  background: radial-gradient(278.82% 137.51% at 1.95% 3.59%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #8e77ff;
+  padding: 13px 64px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.control-main__step-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+.control-main__step-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+.control-main__info {
+  margin-bottom: 40px;
+}
+.control-main__info-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #020202;
+}
+.control-main__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.control-main__item-text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+.control-main__addition {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  padding: 40px;
+}

@@ -1,0 +1,385 @@
+.home-videos {
+  position: relative;
+  padding: 20px 0px 50px 0px;
+
+  &__container {
+    position: relative;
+    border: 1px solid #6446a62c;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 40px 0px;
+  }
+
+  &__texts {
+    padding: 0px 40px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    color: #332c3a;
+    margin-bottom: 17px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: #332c3a;
+    margin-bottom: 40px;
+    max-width: 611px;
+  }
+
+  &__videos {
+    padding: 0px 40px;
+    display: flex;
+    align-items: end;
+    margin-top: -170px;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+
+  &__video {
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  &__video2 {
+    border-radius: 20px;
+    position: relative;
+  }
+
+  &__video-img {
+    border-radius: 20px;
+    display: block;
+  }
+
+  &__video-img2-phone {
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__video-img2 {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+    }
+
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  &__video-content {
+    padding: 0px 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__video-content1 {
+    bottom: 35px;
+  }
+
+  &__video-info {
+    flex: 1;
+    max-width: 432px;
+  }
+
+  &__video-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 11px;
+    margin-top: -40px;
+  }
+
+  &__video-title {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &__video-title2 {
+    max-width: 331px;
+  }
+
+  &__video-button {
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    isolation: isolate;
+
+    background: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.03) 40%,
+      rgba(255, 255, 255, 0.08) 100%
+    );
+
+    backdrop-filter: blur(20px) saturate(1.1);
+    -webkit-backdrop-filter: blur(20px) saturate(1.1);
+    transition: 0.1s linear all;
+
+    &:hover {
+      transform: scale(1.1);
+      backdrop-filter: blur(6px) saturate(1.1);
+      -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    }
+
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.15),
+      inset 0 1px 1px rgba(255, 255, 255, 0.25),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(255, 100, 150, 0.2) 0%, transparent 30%),
+        radial-gradient(circle at 75% 80%, rgba(100, 180, 255, 0.18) 0%, transparent 35%);
+      mix-blend-mode: screen;
+      filter: blur(8px);
+      pointer-events: none;
+    }
+    z-index: 10;
+
+    & img {
+      margin-left: 6px;
+      width: 43px;
+      height: 34px;
+    }
+  }
+
+  &__video-button1 {
+    margin-top: -50px;
+  }
+
+  &__video-button2 {
+    margin-top: -20px;
+  }
+
+  &__button {
+    cursor: pointer;
+    margin-top: 40px;
+    margin: 0px auto;
+    width: fit-content;
+    border-radius: 100px;
+    background: #e97300;
+    padding: 26px 70px;
+    text-align: center;
+
+    &:hover {
+      background: #c96400;
+    }
+
+    &:active {
+      background: #9e4f00;
+    }
+  }
+
+  &__button-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &__decor1 {
+    user-select: none;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    z-index: -10;
+  }
+
+  &__decor2 {
+    user-select: none;
+    position: absolute;
+    bottom: -250px;
+    right: -50px;
+    z-index: -10;
+  }
+
+  &__button-decor {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+  }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+  .home-videos {
+    &__videos {
+      margin-top: 0px;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    &__video {
+      margin: 0px auto;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-videos {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__video {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__video-img img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__video-title {
+      font-size: 20px;
+    }
+
+    &__video-content {
+      bottom: 20px;
+    }
+
+    &__video-button img {
+      width: 80px;
+    }
+  }
+}
+
+@media (max-width: 528px) {
+  .home-videos {
+    &__title {
+      font-size: 30px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      text-align: left;
+    }
+
+    &__videos {
+      padding: 0px 15px;
+    }
+
+    &__video-img {
+      display: none;
+    }
+
+    &__video-img2-phone {
+      display: block;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+
+    &__video-content {
+      flex-direction: row;
+      bottom: 20px;
+    }
+
+    &__button {
+      padding: 19px 24px;
+    }
+
+    &__video-button {
+      width: 60px;
+      height: 60px;
+      margin-left: 0px;
+
+      & img {
+        width: 26px;
+        height: 21px;
+      }
+    }
+
+    &__video-button1 {
+      margin-top: -19px;
+    }
+
+    &__video-title {
+      max-width: 250px;
+    }
+
+    &__button-text {
+      font-size: 16px;
+    }
+
+    &__texts {
+      padding: 0px 20px;
+    }
+
+    &__button-decor {
+      bottom: -6px;
+      right: 14px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .home-videos {
+    &__video-title {
+      font-size: 16px;
+    }
+
+    &__video-subtitle {
+      font-size: 12px;
+    }
+
+    &__video-button1 {
+      margin-top: 0px;
+    }
+  }
+}

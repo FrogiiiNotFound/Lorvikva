@@ -1,0 +1,12 @@
+.texts {
+  padding: 100px 0px;
+}
+.texts__text {
+  font-weight: 600;
+  font-size: 14px;
+  color: #332c3a;
+  margin-bottom: 20px;
+}
+.texts__text span {
+  font-weight: 400;
+}

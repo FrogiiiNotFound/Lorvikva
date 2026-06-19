@@ -1,0 +1,10 @@
+.header_nav-pages {
+  background: rgba(61, 25, 100, 0.55);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.header-pages {
+  background: url("../../images/pagesHeader/decor.png") center/cover no-repeat;
+}

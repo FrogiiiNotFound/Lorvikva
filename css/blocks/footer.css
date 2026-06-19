@@ -1,0 +1,31 @@
+.footer__container {
+  border-radius: 20px 20px 0 0;
+  background: #6546a6;
+}
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 42px;
+}
+.footer__date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+.footer__information {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #fff;
+}
