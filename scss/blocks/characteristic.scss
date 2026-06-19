@@ -127,6 +127,7 @@
 
 @media (max-width: 1250px) {
   .characteristic {
+    padding: 0px 15px;
     &__title {
       max-width: 400px;
       font-size: 31px;
@@ -154,8 +155,7 @@
 
 @media (max-width: 768px) {
   .characteristic {
-    padding: 0px;
-    
+
     &__decor2 {
       opacity: 0.4;
     }

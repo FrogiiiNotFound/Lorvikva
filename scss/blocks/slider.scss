@@ -133,6 +133,7 @@
   &__addition {
     position: relative;
     margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   &__addition-text {
@@ -156,56 +157,42 @@
   &__addition-plus {
     cursor: pointer;
     position: absolute;
-    bottom: 70px;
-    left: 46.5%;
+    bottom: -30px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: relative;
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     isolation: isolate;
-
     background: linear-gradient(
       -45deg,
       rgba(255, 255, 255, 0.15) 0%,
       rgba(255, 255, 255, 0.03) 40%,
       rgba(255, 255, 255, 0.08) 100%
     );
-    transition: 0.5s ease-out all;
-
-    & img {
-      transition: 0.5s ease-out all;
-    }
-
-    &:hover {
-      backdrop-filter: blur(6px) saturate(1.1);
-      -webkit-backdrop-filter: blur(6px) saturate(1.1);
-      transform: scale(1.1);
-    }
-
-    &:hover img {
-      rotate: 180deg;
-    }
-
-    &:active {
-      backdrop-filter: blur(20px) saturate(1.1);
-      -webkit-backdrop-filter: blur(20px) saturate(1.1);
-    }
-
-    backdrop-filter: blur(3px) saturate(1.1);
-    -webkit-backdrop-filter: blur(3px) saturate(1.1);
-    transition: 0.1s linear all;
-
+    border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow:
       0 4px 16px rgba(0, 0, 0, 0.15),
       inset 0 1px 1px rgba(255, 255, 255, 0.25),
       inset 0 -1px 1px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(3px) saturate(1.1);
+    -webkit-backdrop-filter: blur(3px) saturate(1.1);
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    // базовый transform — только горизонтальное центрирование
+    transform: translateX(-50%);
+
+    // единый transition для transform/filter — без дублей
+    transition:
+      transform 0.5s ease-out,
+      backdrop-filter 0.5s ease-out,
+      box-shadow 0.5s ease-out;
+
+    & img {
+      transition: rotate 0.5s ease-out;
+    }
 
     &::before {
       content: '';
@@ -218,6 +205,21 @@
       mix-blend-mode: screen;
       filter: blur(8px);
       pointer-events: none;
+    }
+
+    &:hover {
+      backdrop-filter: blur(6px) saturate(1.1);
+      -webkit-backdrop-filter: blur(6px) saturate(1.1);
+      transform: translateX(-50%) scale(1.1);
+    }
+
+    &:hover img {
+      rotate: 180deg;
+    }
+
+    &:active {
+      backdrop-filter: blur(20px) saturate(1.1);
+      -webkit-backdrop-filter: blur(20px) saturate(1.1);
     }
   }
 
@@ -337,11 +339,13 @@
     }
 
     &__addition-plus {
-      bottom: 2%;
+      bottom: 40px;
       max-width: 80px;
+      max-height: 80px;
 
       & img {
         max-width: 80px;
+        max-height: 80px;
       }
     }
 
@@ -416,13 +420,23 @@
     }
 
     &__addition-plus {
-      bottom: -19%;
+      bottom: 10px;
     }
   }
 }
 
 @media (max-width: 528px) {
   .slider {
+    padding: 50px 15px 21px;
+
+    &__addition {
+      margin-bottom: 10px;
+    }
+
+    &__addition-content-close-btn img {
+      width: 150px;
+    }
+
     &__slide-subtitle {
       max-width: 250px;
       font-size: 30px;
@@ -474,7 +488,7 @@
     }
 
     &__addition-text {
-      top: 70%;
+      top: 63%;
       min-width: 350px;
     }
 
@@ -482,13 +496,29 @@
       bottom: -17%;
     }
 
-    &__addition-plus img {
-      width: 65px;
+    &__addition-plus {
+      bottom: 6px;
+      left: 50%;
+      max-width: 65px;
+      max-height: 65px;
+
+      & img {
+        width: 30px;
+      }
     }
 
     &__container {
       padding: 0px;
     }
+
+    &__addition-text {
+      top: 55%;
+    }
+  }
+
+  .slider__addition-text.title-animation .animated-text {
+    display: block; /* или inline-block */
+    margin-top: 10px; /* подберите нужное значение */
   }
 }
 

@@ -113,9 +113,72 @@
     color: #fff;
   }
 
+  &__video-title2 {
+    max-width: 331px;
+  }
+
   &__video-button {
     cursor: pointer;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    isolation: isolate;
+
+    background: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.03) 40%,
+      rgba(255, 255, 255, 0.08) 100%
+    );
+
+    backdrop-filter: blur(20px) saturate(1.1);
+    -webkit-backdrop-filter: blur(20px) saturate(1.1);
+    transition: 0.1s linear all;
+
+    &:hover {
+      transform: scale(1.1);
+      backdrop-filter: blur(6px) saturate(1.1);
+      -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    }
+
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.15),
+      inset 0 1px 1px rgba(255, 255, 255, 0.25),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(255, 100, 150, 0.2) 0%, transparent 30%),
+        radial-gradient(circle at 75% 80%, rgba(100, 180, 255, 0.18) 0%, transparent 35%);
+      mix-blend-mode: screen;
+      filter: blur(8px);
+      pointer-events: none;
+    }
+    z-index: 10;
+
+    & img {
+      margin-left: 6px;
+      width: 43px;
+      height: 34px;
+    }
   }
 
   &__video-button1 {
@@ -165,6 +228,12 @@
     bottom: -250px;
     right: -50px;
     z-index: -10;
+  }
+
+  &__button-decor {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
   }
 }
 
@@ -265,12 +334,36 @@
       padding: 19px 24px;
     }
 
+    &__video-button {
+      width: 60px;
+      height: 60px;
+      margin-left: 0px;
+
+      & img {
+        width: 26px;
+        height: 21px;
+      }
+    }
+
+    &__video-button1 {
+      margin-top: -19px;
+    }
+
+    &__video-title {
+      max-width: 250px;
+    }
+
     &__button-text {
       font-size: 16px;
     }
 
     &__texts {
       padding: 0px 20px;
+    }
+
+    &__button-decor {
+      bottom: -6px;
+      right: 14px;
     }
   }
 }

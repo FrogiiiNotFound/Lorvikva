@@ -31,7 +31,7 @@
     position: relative;
     z-index: 1;
     cursor: pointer;
-    border: 1px solid #D8CEEB;
+    border: 1px solid #d8ceeb;
     border-radius: 40px;
     padding: 46px 73px;
     background: radial-gradient(
@@ -84,15 +84,7 @@
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 80px;
-  }
-
-  &__cns-item-icon {
-    margin-left: -80px;
-    margin-bottom: -140px;
-  }
-
-  &__cns-item-texts {
-    margin-left: -70px;
+    gap: 40px;
   }
 
   &__cns-procents {
@@ -281,6 +273,7 @@
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 80px;
+    gap: 40px;
   }
 
   &__general-item-decor {
@@ -288,13 +281,6 @@
     bottom: -80px;
     left: 100px;
     z-index: -10;
-  }
-
-  &__general-item-img {
-  }
-
-  &__general-texts {
-    margin-left: -20px;
   }
 
   &__general-procent {
@@ -602,6 +588,49 @@
 
   &__general-learn-more-img-phone {
     display: none;
+  }
+
+  &__general-item-decor1 {
+    position: absolute;
+    bottom: -70px;
+    left: 150px;
+    z-index: -10;
+  }
+
+  &__general-item-decor2 {
+    position: absolute;
+    top: -80px;
+    left: 110px;
+    z-index: -10;
+  }
+
+  &__general-item-img {
+    border-radius: 100%;
+    backdrop-filter: blur(12px) saturate(1.1);
+    -webkit-backdrop-filter: blur(12px) saturate(1.1);
+  }
+
+  &__cns-item {
+    position: relative;
+  }
+
+  &__cns-item-decor1 {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    z-index: -10;
+  }
+  &__cns-item-decor2 {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -10;
+  }
+
+  &__cns-item-icon {
+    border-radius: 100%;
+    backdrop-filter: blur(12px) saturate(1.1);
+    -webkit-backdrop-filter: blur(12px) saturate(1.1);
   }
 }
 
@@ -943,6 +972,10 @@
 
 @media (max-width: 528px) {
   .effective-page {
+    &__cns-item {
+      gap: 20px;
+    }
+
     &__title {
       font-size: 36px;
       margin-bottom: 40px;
@@ -1098,6 +1131,18 @@
 
     &__cns-schedule-addition {
       font-size: 13px;
+    }
+
+    &__general-item-decor1 {
+      display: none;
+    }
+
+    &__general-item-decor2 {
+      display: none;
+    }
+
+    &__general-item {
+      gap: 20px;
     }
   }
 }
