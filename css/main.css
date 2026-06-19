@@ -483,18 +483,30 @@ sup {
 }
 
 .anim-item-main {
-  position: relative;
-  z-index: 1;
+  -webkit-animation: slideUpFade 1.2s ease-out forwards;
+          animation: slideUpFade 1.2s ease-out forwards;
+}
+
+.anim-item-main {
   -webkit-animation: slideUpFade 1.2s ease-out forwards;
           animation: slideUpFade 1.2s ease-out forwards;
   will-change: transform;
 }
 
+.anim-item-main.parallax-ready {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
 @-webkit-keyframes slideUpFade {
   from {
     opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   to {
     opacity: 1;
@@ -506,8 +518,8 @@ sup {
 @keyframes slideUpFade {
   from {
     opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   to {
     opacity: 1;
@@ -1382,10 +1394,10 @@ sup {
           filter: blur(8px);
   pointer-events: none;
 }
-.home-videos__video-button img {
+.home-videos__video-button svg {
   margin-left: 6px;
-  width: 43px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
 }
 .home-videos__video-button1 {
   margin-top: -50px;
@@ -1525,11 +1537,10 @@ sup {
   .home-videos__video-button {
     width: 60px;
     height: 60px;
-    margin-left: 0px;
   }
-  .home-videos__video-button img {
-    width: 26px;
-    height: 21px;
+  .home-videos__video-button svg {
+    width: 20px;
+    height: 20px;
   }
   .home-videos__video-button1 {
     margin-top: -19px;
@@ -1652,6 +1663,9 @@ sup {
   }
 }
 @media (max-width: 768px) {
+  .footer {
+    margin-bottom: 40px;
+  }
   .footer__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

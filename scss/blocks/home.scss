@@ -78,17 +78,23 @@
 }
 
 .anim-item-main {
-  position: relative;
-  z-index: 1; // на уровне home, ниже effective
+  animation: slideUpFade 1.2s ease-out forwards;
+}
 
+.anim-item-main {
   animation: slideUpFade 1.2s ease-out forwards;
   will-change: transform;
+}
+
+.anim-item-main.parallax-ready {
+  animation: none;
+  transition: transform 0.1s ease-out;
 }
 
 @keyframes slideUpFade {
   from {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
