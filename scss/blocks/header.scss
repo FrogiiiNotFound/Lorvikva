@@ -303,13 +303,17 @@
     top: 0px;
   }
 
+  .header__decor2 {
+    display: none;
+  }
+
   .icon-menu span:last-child {
     top: auto;
     bottom: 0px;
   }
 
   .icon-menu2 {
-    display: block;
+    display: flex;
   }
 
   .icon-menu._active {

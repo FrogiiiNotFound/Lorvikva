@@ -1,13 +1,10 @@
 .security {
-  &__container {
-  }
 
   &__title {
     max-width: 800px;
     font-weight: 900;
     font-size: 64px;
     color: #ffa500;
-    margin-top: 100px;
     margin-bottom: 80px;
   }
 
@@ -62,9 +59,6 @@
     display: flex;
     align-items: center;
     gap: 40px;
-  }
-
-  &__procent-item-icon {
   }
 
   &__procent-item-texts {
@@ -131,9 +125,6 @@
     margin-bottom: 30px;
   }
 
-  &__mark-item-img {
-  }
-
   &__mark-item-text {
     font-weight: 400;
     font-size: 24px;
@@ -181,11 +172,14 @@
   }
 
   &__column-plus {
+    width: fit-content;
     cursor: pointer;
-    text-align: center;
-  }
+    margin: 0px auto;
+    transition: 0.1s ease-out all;
 
-  &__info {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__info-title {
@@ -381,7 +375,6 @@
     &__title {
       font-size: 40px;
       margin-bottom: 30px;
-      margin-top: 50px;
     }
 
     &__subtitle {

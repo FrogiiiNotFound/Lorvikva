@@ -6,7 +6,8 @@
 }
 
 .header-pages {
-  background: url('../../images/pagesHeader/decor.png') center/cover no-repeat;
+  background: url('../images/pagesHeader/decor.png') center/cover no-repeat;
+  min-height: 199px;
 }
 
 .header__logo {
@@ -67,4 +68,25 @@
   bottom: -27px;
   left: 120px;
   z-index: 1;
+}
+
+.header__container-pages {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 528px) {
+  .header__logo {
+    display: none;
+  }
+
+  .header__decor2 {
+    display: none;
+  }
+
+  .header__container {
+    padding: 12px 32px 25px 32px;
+    border-radius: 0 0 200px 200px;
+    background: rgba(61, 25, 100, 0.55);
+    border: 1px solid #8e77ff;
+  }
 }

@@ -2,19 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const parallaxEl = document.querySelector('.anim-item-main');
   if (!parallaxEl) return;
 
-  const intensity = 30;
+  const scrollIntensity = 0.3;
 
   function initParallax() {
-    parallaxEl.classList.add('parallax-ready'); // отключаем CSS-анимацию, освобождая transform
+    parallaxEl.classList.add('parallax-ready');
 
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 2;
-      const y = (e.clientY / window.innerHeight - 0.5) * 2;
-
-      parallaxEl.style.transform = `translate(${x * intensity}px, ${y * intensity}px)`;
-    });
+    window.addEventListener(
+      'scroll',
+      () => {
+        const scrollY = window.scrollY;
+        parallaxEl.style.transform = `translateY(${scrollY * scrollIntensity * -1}px)`;
+      },
+      { passive: true },
+    );
   }
 
-  // ждём завершения анимации появления, потом включаем параллакс
   parallaxEl.addEventListener('animationend', initParallax, { once: true });
 });

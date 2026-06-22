@@ -1,6 +1,4 @@
 .effective-page {
-  &__container {
-  }
 
   &__title {
     max-width: 800px;
@@ -8,7 +6,6 @@
     font-size: 64px;
     color: #ffa500;
     margin-bottom: 60px;
-    margin-top: 100px;
   }
 
   &__btns {
@@ -61,12 +58,6 @@
     border: 1px solid #e1d5fc;
     font-weight: 700;
     color: #6546a6;
-  }
-
-  &__content {
-  }
-
-  &__cns {
   }
 
   &__cns-title {
@@ -137,6 +128,16 @@
 
   &__cns-time-plus {
     text-align: center;
+    transition: 0.1s ease-out all;
+    border-radius: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    & img {
+      border-radius: 100%;
+    }
   }
 
   &__cns-schedule-wrapper {
@@ -231,9 +232,6 @@
     }
   }
 
-  &__cns-schedule-list {
-  }
-
   &__cns-schedule-list-title {
     font-weight: 600;
     font-size: 14px;
@@ -250,8 +248,6 @@
 }
 
 .effective-page {
-  &__general {
-  }
 
   &__general-title {
     font-weight: 700;
@@ -341,13 +337,11 @@
     font-size: 16px;
     line-height: 120%;
     color: #9c9b9d;
+    margin-bottom: 20px;
   }
 
   &__general-learn-more {
     position: relative;
-  }
-
-  &__general-learn-more-img {
   }
 
   &__general-learn-more-content {
@@ -367,9 +361,6 @@
     &__general-learn-more-content {
       margin-top: -260px;
     }
-  }
-
-  &__general-learn-more-texts {
   }
 
   &__general-learn-more-text {
@@ -407,9 +398,6 @@
     top: -280px;
     left: -350px;
     z-index: -10;
-  }
-
-  &__general-shedule-procent {
   }
 
   &__general-shedule-procent-item {
@@ -455,11 +443,18 @@
   }
 
   &__general-shedule-procent-minus {
+    width: fit-content;
     cursor: pointer;
-    text-align: center;
-  }
+    margin: 0px auto;
+    transition: 0.1s ease-out all;
 
-  &__general-simple {
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    & img {
+      border-radius: 100%;
+    }
   }
 
   &__general-simple-title {
@@ -519,9 +514,16 @@
   &__general-simple-shedule-plus {
     cursor: pointer;
     text-align: center;
-  }
 
-  &__general-example {
+    transition: 0.1s ease-out all;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    & img {
+      border-radius: 100%;
+    }
   }
 
   &__general-example-title {
@@ -556,6 +558,7 @@
   }
 
   &__general-example-shedule-img {
+    margin-bottom: 40px;
   }
 
   &__general-addition {
@@ -631,6 +634,61 @@
     border-radius: 100%;
     backdrop-filter: blur(12px) saturate(1.1);
     -webkit-backdrop-filter: blur(12px) saturate(1.1);
+  }
+
+  &__general-learn-more-btn {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.03) 40%,
+      rgba(255, 255, 255, 0.08) 100%
+    );
+
+    backdrop-filter: blur(3px) saturate(1.1);
+    -webkit-backdrop-filter: blur(3px) saturate(1.1);
+    transition: 0.1s linear all;
+
+    &:hover {
+      transform: scale(1.1);
+      backdrop-filter: blur(6px) saturate(1.1);
+      -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    }
+
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.15),
+      inset 0 1px 1px rgba(255, 255, 255, 0.25),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(255, 100, 150, 0.2) 0%, transparent 30%),
+        radial-gradient(circle at 75% 80%, rgba(100, 180, 255, 0.18) 0%, transparent 35%);
+      mix-blend-mode: screen;
+      filter: blur(8px);
+      pointer-events: none;
+    }
+    z-index: 10;
   }
 }
 
@@ -972,6 +1030,8 @@
 
 @media (max-width: 528px) {
   .effective-page {
+    margin-bottom: 40px;
+    
     &__cns-item {
       gap: 20px;
     }
@@ -979,7 +1039,6 @@
     &__title {
       font-size: 36px;
       margin-bottom: 40px;
-      margin-top: 80px;
     }
 
     &__btn {
@@ -1016,8 +1075,15 @@
       font-size: 20px;
     }
 
-    &__general-learn-more-btn img {
-      width: 90px;
+    &__general-learn-more-btn {
+      min-width: 60px;
+      max-width: 60px;
+      height: 60px;
+
+      & img {
+        width: 12px;
+        height: 23px;
+      }
     }
 
     &__general-simple-shedule {
@@ -1045,7 +1111,7 @@
     }
 
     &__general-item-img img {
-      max-width: 200px;
+      max-width: 160px;
     }
 
     &__general-item {
@@ -1143,6 +1209,14 @@
 
     &__general-item {
       gap: 20px;
+    }
+
+    &__cns-item-decor1 {
+      display: none;
+    }
+
+    &__cns-item-decor2 {
+      display: none;
     }
   }
 }
