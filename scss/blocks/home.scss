@@ -59,7 +59,16 @@
     background: radial-gradient(circle, rgba(0, 0, 0, 0.342) 100%);
   }
 
+  &__image-wrapper {
+    overflow: hidden;
+  }
+
+  &__image {
+    transform: translateY(200px);
+  }
+
   &__image2 {
+    transform: translateY(200px);
     display: none;
   }
 }
@@ -79,9 +88,10 @@
 
 .anim-item-main {
   animation: slideUpFade 1.2s ease-out forwards;
+  will-change: transform;
 }
 
-.anim-item-main {
+.anim-item-main2 {
   animation: slideUpFade 1.2s ease-out forwards;
   will-change: transform;
 }
@@ -91,14 +101,19 @@
   transition: transform 0.1s ease-out;
 }
 
+.anim-item-main2.parallax-ready {
+  animation: none;
+  transition: transform 0.1s ease-out;
+}
+
 @keyframes slideUpFade {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(400px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(200px);
   }
 }
 

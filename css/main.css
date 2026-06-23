@@ -471,7 +471,16 @@ sup {
   left: 300px;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.342) 100%);
 }
+.home__image-wrapper {
+  overflow: hidden;
+}
+.home__image {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
 .home__image2 {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
   display: none;
 }
 
@@ -492,9 +501,10 @@ sup {
 .anim-item-main {
   -webkit-animation: slideUpFade 1.2s ease-out forwards;
           animation: slideUpFade 1.2s ease-out forwards;
+  will-change: transform;
 }
 
-.anim-item-main {
+.anim-item-main2 {
   -webkit-animation: slideUpFade 1.2s ease-out forwards;
           animation: slideUpFade 1.2s ease-out forwards;
   will-change: transform;
@@ -509,29 +519,38 @@ sup {
   transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
 }
 
+.anim-item-main2.parallax-ready {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
 @-webkit-keyframes slideUpFade {
   from {
     opacity: 0;
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
   }
 }
 
 @keyframes slideUpFade {
   from {
     opacity: 0;
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
   }
 }
 /* ============================================================================== */
